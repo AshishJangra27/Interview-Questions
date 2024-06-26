@@ -3,7 +3,7 @@
 
 ### 1. What is SQL?
 **Answer:**  
-SQL (Structured Query Language) is a standard programming language used for managing and manipulating relational databases. It allows users to perform tasks such as querying data, updating records, deleting data, and creating and modifying database structures. Example:
+SQL (Structured Query Language) is a standard programming language used for managing and manipulating relational databases. It allows users to perform tasks such as querying data, updating records, deleting data, and creating and modifying database structures.
 ```sql
 SELECT * FROM employees;
 ```
@@ -12,7 +12,7 @@ SELECT * FROM employees;
 
 ### 2. What is a primary key?
 **Answer:**  
-A primary key is a unique identifier for a record in a database table. It ensures that each record can be uniquely identified and helps to establish relationships between tables. A primary key cannot contain NULL values. Example:
+A primary key is a unique identifier for a record in a database table. It ensures that each record can be uniquely identified and helps to establish relationships between tables. A primary key cannot contain NULL values.
 ```sql
 CREATE TABLE employees (
     id INT PRIMARY KEY,
@@ -49,6 +49,27 @@ A JOIN clause is used to combine rows from two or more tables based on a related
 - **LEFT JOIN**
 - **RIGHT JOIN**
 - **FULL OUTER JOIN**
+```sql
+-- INNER JOIN
+SELECT employees.name, departments.name
+FROM employees
+INNER JOIN departments ON employees.department_id = departments.id;
+
+-- LEFT JOIN
+SELECT employees.name, departments.name
+FROM employees
+LEFT JOIN departments ON employees.department_id = departments.id;
+
+-- RIGHT JOIN
+SELECT employees.name, departments.name
+FROM employees
+RIGHT JOIN departments ON employees.department_id = departments.id;
+
+-- FULL OUTER JOIN
+SELECT employees.name, departments.name
+FROM employees
+FULL OUTER JOIN departments ON employees.department_id = departments.id;
+```
 
 ---
 
@@ -58,12 +79,39 @@ A JOIN clause is used to combine rows from two or more tables based on a related
 - **OUTER JOIN:** Includes all rows from one table and the matching rows from the other table. If there is no match, it returns null for the columns from the table without a match. This can be further divided into:
   - **LEFT JOIN:** Includes all rows from the left table.
   - **RIGHT JOIN:** Includes all rows from the right table.
+```sql
+-- INNER JOIN
+SELECT employees.name, departments.name
+FROM employees
+INNER JOIN departments ON employees.department_id = departments.id;
+
+-- LEFT JOIN
+SELECT employees.name, departments.name
+FROM employees
+LEFT JOIN departments ON employees.department_id = departments.id;
+
+-- RIGHT JOIN
+SELECT employees.name, departments.name
+FROM employees
+RIGHT JOIN departments ON employees.department_id = departments.id;
+
+-- FULL OUTER JOIN
+SELECT employees.name, departments.name
+FROM employees
+FULL OUTER JOIN departments ON employees.department_id = departments.id;
+```
 
 ---
 
 ### 6. What is a subquery?
 **Answer:**  
 A subquery is a query nested inside another query. It is used to perform intermediate steps in complex queries, often for filtering results or performing calculations that are then used by the main query.
+```sql
+-- Subquery to find employees with salary greater than the average salary
+SELECT name
+FROM employees
+WHERE salary > (SELECT AVG(salary) FROM employees);
+```
 
 ---
 
@@ -71,6 +119,13 @@ A subquery is a query nested inside another query. It is used to perform interme
 **Answer:**  
 - **Using `COALESCE`:** Replace NULL values with a specified value.
 - **Filtering out NULLs:** Use a condition in the WHERE clause to exclude rows with NULL values, e.g., `WHERE column IS NOT NULL`.
+```sql
+-- Using COALESCE to replace NULL values
+SELECT COALESCE(salary, 0) FROM employees;
+
+-- Filtering out NULLs
+SELECT * FROM employees WHERE salary IS NOT NULL;
+```
 
 ---
 
@@ -78,18 +133,36 @@ A subquery is a query nested inside another query. It is used to perform interme
 **Answer:**  
 - **DELETE:** Removes specified rows from a table based on a condition and can be rolled back if used within a transaction. It also fires any associated triggers.
 - **TRUNCATE:** Removes all rows from a table without logging individual row deletions and cannot be rolled back in most databases. TRUNCATE is faster than DELETE and resets any identity columns.
+```sql
+-- DELETE
+DELETE FROM employees WHERE department_id = 1;
+
+-- TRUNCATE
+TRUNCATE TABLE employees;
+```
 
 ---
 
 ### 9. What is a stored procedure?
 **Answer:**  
-A stored procedure is a precompiled collection of one or more SQL statements stored in the database. It is used to encapsulate repetitive tasks, improve performance by reducing the need to compile SQL code multiple times and enhance security by controlling access to data.
+A stored procedure is a precompiled collection of one or more SQL statements stored in the database. It is used to encapsulate repetitive tasks, improve performance by reducing the need to compile SQL code multiple times, and enhance security by controlling access to data.
+```sql
+-- Example of a stored procedure
+CREATE PROCEDURE GetEmployeeDetails
+AS
+BEGIN
+    SELECT * FROM employees;
+END;
+```
 
 ---
 
 ### 10. What is indexing in SQL?
 **Answer:**  
 Indexing is a technique used to improve the performance of SQL queries by reducing the amount of data that needs to be scanned. An index is created on a table column, and it helps the database to find rows more quickly and efficiently.
+```sql
+CREATE INDEX idx_employee_name ON employees(name);
+```
 
 ---
 
