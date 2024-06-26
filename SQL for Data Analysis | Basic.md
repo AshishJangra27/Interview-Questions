@@ -61,7 +61,7 @@ A subquery is a query nested inside another query. It is used to perform interme
 
 ### 9. What is a stored procedure?
 **Answer:**  
-A stored procedure is a precompiled collection of one or more SQL statements stored in the database. It is used to encapsulate repetitive tasks, improve performance by reducing the need to compile SQL code multiple times, and enhance security by controlling access to data.
+A stored procedure is a precompiled collection of one or more SQL statements stored in the database. It is used to encapsulate repetitive tasks, improve performance by reducing the need to compile SQL code multiple times and enhance security by controlling access to data.
 
 ---
 
@@ -70,8 +70,3 @@ A stored procedure is a precompiled collection of one or more SQL statements sto
 Indexing is a technique used to improve the performance of SQL queries by reducing the amount of data that needs to be scanned. An index is created on a table column, and it helps the database to find rows more quickly and efficiently.
 
 ---
-
-Stay tuned for more essential SQL questions and answers!
-
-**Follow me for more insights on data science and career tips!**  
-#DataScience #SQL #InterviewPrep #DataAnalysis #CareerTips #AshishJangra
