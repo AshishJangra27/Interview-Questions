@@ -70,3 +70,35 @@ A stored procedure is a precompiled collection of one or more SQL statements sto
 Indexing is a technique used to improve the performance of SQL queries by reducing the amount of data that needs to be scanned. An index is created on a table column, and it helps the database to find rows more quickly and efficiently.
 
 ---
+
+### 11. What is normalization in SQL?
+**Answer:**  
+Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity. It involves dividing large tables into smaller ones and defining relationships between them. Common normalization forms include:
+- **1NF (First Normal Form)**
+- **2NF (Second Normal Form)**
+- **3NF (Third Normal Form)**
+- **BCNF (Boyce-Codd Normal Form)**
+
+---
+
+### 12. What is denormalization?
+**Answer:**  
+Denormalization is the process of combining normalized tables to improve read performance. It involves adding redundant data to one or more tables to avoid complex joins and improve query execution time.
+
+---
+
+### 13. What is a view in SQL?
+**Answer:**  
+A view is a virtual table based on the result set of an SQL query. It contains rows and columns just like a real table and can be used to simplify complex queries, enhance security by restricting access to specific data, and present data in a specific format.
+
+---
+
+### 14. How do you create a view in SQL?
+**Answer:**  
+To create a view, use the `CREATE VIEW` statement followed by the view name and the `AS` keyword with the SELECT query. Example:
+```sql
+CREATE VIEW view_name AS
+SELECT column1, column2
+FROM table_name
+WHERE condition;
+```
