@@ -12,13 +12,33 @@ SELECT * FROM employees;
 
 ### 2. What is a primary key?
 **Answer:**  
-A primary key is a unique identifier for a record in a database table. It ensures that each record can be uniquely identified and helps to establish relationships between tables. A primary key cannot contain NULL values.
+A primary key is a unique identifier for a record in a database table. It ensures that each record can be uniquely identified and helps to establish relationships between tables. A primary key cannot contain NULL values. Example:
+```sql
+CREATE TABLE employees (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    department VARCHAR(100)
+);
+```
 
 ---
 
 ### 3. What is a foreign key?
 **Answer:**  
 A foreign key is a column or a set of columns in one table that uniquely identifies a row of another table. It creates a relationship between the two tables and enforces referential integrity.
+```sql
+CREATE TABLE departments (
+    id INT PRIMARY KEY,
+    name VARCHAR(100)
+);
+
+CREATE TABLE employees (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    department_id INT,
+    FOREIGN KEY (department_id) REFERENCES departments(id)
+);
+```
 
 ---
 
