@@ -685,6 +685,21 @@ The `REPLACE` function is used to replace occurrences of a specified substring w
 **Answer:**  
 - **DATE:** Stores date values (year, month, day) without time.
 - **TIMESTAMP:** Stores date and time values (year, month, day, hour, minute, second, fractional seconds).
+'''
+-- Creating a table with DATE and TIMESTAMP columns
+CREATE TABLE events (
+    event_id INT PRIMARY KEY,
+    event_date DATE,
+    event_timestamp TIMESTAMP
+);
+
+-- Inserting data into the table
+INSERT INTO events (event_id, event_date, event_timestamp) 
+VALUES (1, '2024-01-01', '2024-01-01 10:00:00');
+
+-- Selecting data from the table
+SELECT * FROM events;
+'''
 
 ---
 
