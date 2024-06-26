@@ -1,4 +1,4 @@
-# 100 Essential SQL Interview Questions and Answers | Easy Level
+# 100 SQL Fundamental Interview Questions and Answers
 
 
 ### 1. What is SQL?
