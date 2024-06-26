@@ -1,5 +1,7 @@
-### Dataset
+# 25 Practical SQL Questions on Sales Table
+---
 
+## Dataset
 **sales**
 
 | sale_id | sale_date  | sale_time  | product_id | product_name | customer_id | customer_name | quantity | price  | total_amount |
