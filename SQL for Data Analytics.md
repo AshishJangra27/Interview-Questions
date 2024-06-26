@@ -1,3 +1,7 @@
+# 100 SQL Interview Questions for Data Analytics and Answers
+
+
+
 ### 1. How do you calculate the moving average in SQL?
 **Answer:**  
 A moving average is used to smooth out short-term fluctuations and highlight longer-term trends or cycles in data. It can be calculated using the `AVG` function and the `OVER` clause with a `ROWS` or `RANGE` specification.
