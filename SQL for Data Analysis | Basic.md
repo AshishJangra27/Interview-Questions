@@ -360,3 +360,311 @@ A stored procedure is a precompiled collection of one or more SQL statements sto
 The `IN` operator is used to filter the result set to include only rows where a specified column's value matches any value in a list of specified values. It is often used in the WHERE clause.
 
 ---
+
+### 51. What is the purpose of the ORDER BY clause in SQL?
+**Answer:**  
+The `ORDER BY` clause is used to sort the result set of a query by one or more columns. By default, it sorts in ascending order; however, it can also sort in descending order using the `DESC` keyword.
+
+---
+
+### 52. What is a unique key in SQL?
+**Answer:**  
+A unique key is a constraint that ensures all values in a column or a set of columns are unique across the table. Unlike the primary key, a table can have multiple unique keys, and unique keys can contain NULL values.
+
+---
+
+### 53. What is the purpose of the CASE statement in SQL?
+**Answer:**  
+The `CASE` statement is used to create conditional logic in SQL queries. It allows you to return different values based on specified conditions, similar to an if-else statement in programming languages.
+
+---
+
+### 54. What is the purpose of the LIMIT clause in SQL?
+**Answer:**  
+The `LIMIT` clause is used to restrict the number of rows returned by a query. It is often used in conjunction with the `ORDER BY` clause to return a subset of the result set.
+
+---
+
+### 55. What is a cross join in SQL?
+**Answer:**  
+A cross join, also known as a Cartesian join, returns the Cartesian product of the two tables involved in the join. This means it returns all possible combinations of rows from the two tables.
+
+---
+
+### 56. What is the difference between an alias and a synonym in SQL?
+**Answer:**  
+- **Alias:** A temporary name given to a table or column in a SQL query for the duration of that query.
+- **Synonym:** A permanent alias for a database object, which remains until explicitly dropped.
+
+---
+
+### 57. What is the difference between SQL and PL/SQL?
+**Answer:**  
+- **SQL:** A standard language for managing and manipulating relational databases.
+- **PL/SQL:** A procedural language extension for SQL, used in Oracle databases to write complex scripts and functions.
+
+---
+
+### 58. What is a foreign key constraint in SQL?
+**Answer:**  
+A foreign key constraint is a rule that maintains referential integrity between two tables. It ensures that the value in a foreign key column matches a value in the primary key column of the referenced table.
+
+---
+
+### 59. What is the purpose of the NVL function in SQL?
+**Answer:**  
+The `NVL` function is used to replace NULL values with a specified value. It is commonly used to ensure that calculations and operations are performed correctly even when some data is missing.
+
+---
+
+### 60. What is a subquery in SQL?
+**Answer:**  
+A subquery is a query nested inside another query. It is used to perform intermediate steps in complex queries, often for filtering results or performing calculations that are then used by the main query.
+
+---
+
+### 61. What is a correlated subquery in SQL?
+**Answer:**  
+A correlated subquery is a subquery that references columns from the outer query. It is executed once for each row processed by the outer query and is used to perform row-by-row processing.
+
+---
+
+### 62. What is the purpose of the COALESCE function in SQL?
+**Answer:**  
+The `COALESCE` function returns the first non-NULL value in a list of expressions. It is used to handle NULL values by providing a default value when NULLs are encountered.
+
+---
+
+### 63. What is a bitmap index in SQL?
+**Answer:**  
+A bitmap index is a type of index that uses bitmaps (binary arrays) to represent the existence of values in a table. Bitmap indexes are efficient for columns with a low cardinality (few distinct values) and are used to improve query performance.
+
+---
+
+### 64. What is the purpose of the ROW_NUMBER() function in SQL?
+**Answer:**  
+The `ROW_NUMBER()` function assigns a unique sequential integer to rows within a result set. It is often used for pagination or to provide a unique identifier for rows in a query result.
+
+---
+
+### 65. What is the difference between RANK() and DENSE_RANK() in SQL?
+**Answer:**  
+- **RANK():** Assigns a rank to each row within a partition, with gaps in the ranking sequence for ties.
+- **DENSE_RANK():** Assigns a rank to each row within a partition without gaps in the ranking sequence for ties.
+
+---
+
+### 66. What is the purpose of the CAST() function in SQL?
+**Answer:**  
+The `CAST()` function is used to convert an expression from one data type to another. It is commonly used to ensure that data types are compatible in expressions and comparisons.
+
+---
+
+### 67. What is a materialized view in SQL?
+**Answer:**  
+A materialized view is a database object that stores the result of a query physically. It is used to improve query performance by precomputing and storing complex query results, reducing the need to recompute them each time.
+
+---
+
+### 68. What is the difference between INNER JOIN and CROSS JOIN?
+**Answer:**  
+- **INNER JOIN:** Returns only the rows where there is a match in both tables based on the specified condition.
+- **CROSS JOIN:** Returns the Cartesian product of two tables, including all possible combinations of rows from both tables.
+
+---
+
+### 69. What is a recursive query in SQL?
+**Answer:**  
+A recursive query is a query that refers to itself, typically using a common table expression (CTE). It is used to perform hierarchical or tree-structured data retrieval.
+
+---
+
+### 70. What is the purpose of the GROUP_CONCAT() function in SQL?
+**Answer:**  
+The `GROUP_CONCAT()` function concatenates values from multiple rows into a single string, separated by a specified delimiter. It is used to aggregate and display multiple values from a group as a single string.
+
+---
+
+### 71. What is the purpose of the IFNULL function in SQL?
+**Answer:**  
+The `IFNULL` function returns a specified value if the given expression is NULL. If the expression is not NULL, it returns the expression itself. It is used to handle NULL values by providing a default value.
+
+---
+
+### 72. What is the difference between a primary key and a unique key?
+**Answer:**  
+- **Primary Key:** Uniquely identifies each row in a table and does not allow NULL values. A table can have only one primary key.
+- **Unique Key:** Ensures that all values in a column or a set of columns are unique. It allows NULL values (only one per column) and a table can have multiple unique keys.
+
+---
+
+### 73. What is a lateral view in SQL?
+**Answer:**  
+A lateral view is used in conjunction with a table-generating function to enable the output of the function to be joined with the original table. It is often used in data transformation and analysis tasks.
+
+---
+
+### 74. What is the purpose of the CURRENT_DATE function in SQL?
+**Answer:**  
+The `CURRENT_DATE` function returns the current date of the system. It is used to retrieve the current date for use in queries and calculations.
+
+---
+
+### 75. What is a composite index in SQL?
+**Answer:**  
+A composite index is an index on two or more columns of a table. It is used to improve the performance of queries that filter or sort data based on multiple columns.
+
+---
+
+### 76. What is the purpose of the AUTO_INCREMENT attribute in SQL?
+**Answer:**  
+The `AUTO_INCREMENT` attribute is used to generate a unique identifier for new rows in a table automatically. It is often applied to primary key columns to ensure that each row has a unique identifier.
+
+---
+
+### 77. What is a table alias in SQL?
+**Answer:**  
+A table alias is a temporary name given to a table within a query. It is used to make the query more readable and to simplify references to the table, especially in complex queries involving joins.
+
+---
+
+### 78. What is the difference between COUNT(*) and COUNT(column_name)?
+**Answer:**  
+- **COUNT(*):** Counts all rows in the table, including rows with NULL values.
+- **COUNT(column_name):** Counts non-NULL values in the specified column.
+
+---
+
+### 79. What is the purpose of the TO_DATE function in SQL?
+**Answer:**  
+The `TO_DATE` function converts a string to a date data type. It is used to transform string representations of dates into actual date values for use in queries and calculations.
+
+---
+
+### 80. What is the purpose of the CASE WHEN statement in SQL?
+**Answer:**  
+The `CASE WHEN` statement is used to implement conditional logic in SQL queries. It allows different values to be returned based on specified conditions, similar to an if-else statement in programming languages.
+
+---
+
+### 81. What is the purpose of the GETDATE() function in SQL?
+**Answer:**  
+The `GETDATE()` function returns the current date and time of the system. It is used to retrieve the current timestamp for use in queries and calculations.
+
+---
+
+### 82. What is a partitioned table in SQL?
+**Answer:**  
+A partitioned table is a large table that is divided into smaller, more manageable pieces called partitions. Each partition can be accessed and maintained separately, which can improve query performance and manageability.
+
+---
+
+### 83. What is the difference between TRUNCATE and DROP?
+**Answer:**  
+- **TRUNCATE:** Removes all rows from a table but retains the table structure for future use. It is faster than DELETE and cannot be rolled back in most databases.
+- **DROP:** Deletes the table and its structure from the database entirely.
+
+---
+
+### 84. What is a cursor in SQL?
+**Answer:**  
+A cursor is a database object used to retrieve, manipulate, and navigate through a result set row by row. Cursors are useful for processing individual rows returned by a query.
+
+---
+
+### 85. What is an inline view in SQL?
+**Answer:**  
+An inline view is a subquery in the FROM clause of a SQL statement. It acts as a temporary table for the duration of the query and can simplify complex queries by breaking them down into smaller, more manageable parts.
+
+---
+
+### 86. What is the difference between IS NULL and IS NOT NULL?
+**Answer:**  
+- **IS NULL:** Checks whether a column value is NULL.
+- **IS NOT NULL:** Checks whether a column value is not NULL.
+
+---
+
+### 87. What is the purpose of the CONCAT function in SQL?
+**Answer:**  
+The `CONCAT` function is used to concatenate two or more strings into a single string. It is commonly used to combine values from different columns or to add static text to query results.
+
+---
+
+### 88. What is a data warehouse in SQL?
+**Answer:**  
+A data warehouse is a centralized repository that stores large volumes of data from multiple sources. It is used for reporting, analysis, and decision-making processes. Data in a data warehouse is typically structured and optimized for read-heavy queries.
+
+---
+
+### 89. What is a surrogate key in SQL?
+**Answer:**  
+A surrogate key is a unique identifier for a record in a table that is not derived from application data. It is typically an auto-incremented number and is used as a primary key.
+
+---
+
+### 90. What is the purpose of the LEFT function in SQL?
+**Answer:**  
+The `LEFT` function is used to extract a specified number of characters from the left side of a string. It is commonly used to manipulate and format string data.
+
+---
+
+### 91. What is the purpose of the RIGHT function in SQL?
+**Answer:**  
+The `RIGHT` function is used to extract a specified number of characters from the right side of a string. It is commonly used to manipulate and format string data.
+
+---
+
+### 92. What is a star schema in SQL?
+**Answer:**  
+A star schema is a type of database schema that is commonly used in data warehousing and business intelligence. It consists of a central fact table surrounded by dimension tables. The fact table contains quantitative data, while dimension tables contain descriptive attributes.
+
+---
+
+### 93. What is a snowflake schema in SQL?
+**Answer:**  
+A snowflake schema is a type of database schema that is a more normalized form of the star schema. In a snowflake schema, dimension tables are normalized into multiple related tables, reducing redundancy and improving data integrity.
+
+---
+
+### 94. What is the difference between the EQUI JOIN and NON-EQUI JOIN?
+**Answer:**  
+- **EQUI JOIN:** A type of join that uses the equality operator (`=`) to match rows between tables based on a common column.
+- **NON-EQUI JOIN:** A type of join that uses operators other than the equality operator (such as `<`, `>`, `<=`, `>=`, `<>`) to match rows between tables.
+
+---
+
+### 95. What is the purpose of the LENGTH function in SQL?
+**Answer:**  
+The `LENGTH` function returns the number of characters in a string. It is used to determine the length of string data.
+
+---
+
+### 96. What is a fact table in SQL?
+**Answer:**  
+A fact table is a central table in a star or snowflake schema in a data warehouse. It contains quantitative data (facts) and foreign keys to dimension tables. Fact tables are used to store metrics and measures for analysis and reporting.
+
+---
+
+### 97. What is a dimension table in SQL?
+**Answer:**  
+A dimension table is a table in a star or snowflake schema in a data warehouse. It contains descriptive attributes (dimensions) related to the facts in the fact table. Dimension tables are used to provide context and meaning to the facts for analysis and reporting.
+
+---
+
+### 98. What is the purpose of the REPLACE function in SQL?
+**Answer:**  
+The `REPLACE` function is used to replace occurrences of a specified substring within a string with another substring. It is commonly used to modify and clean string data.
+
+---
+
+### 99. What is the difference between the DATE and TIMESTAMP data types in SQL?
+**Answer:**  
+- **DATE:** Stores date values (year, month, day) without time.
+- **TIMESTAMP:** Stores date and time values (year, month, day, hour, minute, second, fractional seconds).
+
+---
+
+### 100. What is a common table expression (CTE) in SQL?
+**Answer:**  
+A common table expression (CTE) is a temporary result set that can be referenced within a SELECT, INSERT, UPDATE, or DELETE statement. It is defined using the `WITH` keyword and provides a way to simplify complex queries and improve readability.
