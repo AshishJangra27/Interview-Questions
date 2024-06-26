@@ -102,3 +102,45 @@ SELECT column1, column2
 FROM table_name
 WHERE condition;
 ```
+
+---
+
+### 15. What is a trigger in SQL?
+**Answer:**  
+A trigger is a stored procedure that automatically executes in response to certain events on a particular table or view. Triggers can be used for enforcing business rules, validating input data, and maintaining audit trails.
+
+---
+
+### 16. What is a transaction in SQL?
+**Answer:**  
+A transaction is a sequence of one or more SQL operations treated as a single unit of work. Transactions ensure data integrity by following the ACID properties (Atomicity, Consistency, Isolation, Durability). A transaction can be started with the `BEGIN TRANSACTION` statement and completed with `COMMIT` or `ROLLBACK`.
+
+---
+
+### 17. What is the difference between COMMIT and ROLLBACK?
+**Answer:**  
+- **COMMIT:** Saves all changes made in the transaction to the database permanently.
+- **ROLLBACK:** Reverts all changes made in the transaction, restoring the database to its previous state before the transaction began.
+
+---
+
+### 18. What are aggregate functions in SQL?
+**Answer:**  
+Aggregate functions perform calculations on multiple rows of a table and return a single value. Common aggregate functions include:
+- **SUM()**: Calculates the total sum of a numeric column.
+- **AVG()**: Calculates the average value of a numeric column.
+- **COUNT()**: Counts the number of rows.
+- **MIN()**: Finds the minimum value in a column.
+- **MAX()**: Finds the maximum value in a column.
+
+---
+
+### 19. What is the GROUP BY clause in SQL?
+**Answer:**  
+The `GROUP BY` clause groups rows that have the same values in specified columns into summary rows. It is often used with aggregate functions to perform calculations on each group. Example:
+```sql
+SELECT column1, COUNT(*)
+FROM table_name
+GROUP BY column1;
+```
+
