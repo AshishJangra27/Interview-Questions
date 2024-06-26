@@ -3,7 +3,10 @@
 
 ### 1. What is SQL?
 **Answer:**  
-SQL (Structured Query Language) is a standard programming language used for managing and manipulating relational databases. It allows users to perform tasks such as querying data, updating records, deleting data, and creating and modifying database structures.
+SQL (Structured Query Language) is a standard programming language used for managing and manipulating relational databases. It allows users to perform tasks such as querying data, updating records, deleting data, and creating and modifying database structures. Example:
+```sql
+SELECT * FROM employees;
+```
 
 ---
 
