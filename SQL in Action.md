@@ -2,28 +2,20 @@
 
 **sales**
 
-| sale_id | sale_date  | sale_time | product_id | product_name | customer_id | customer_name | quantity | price  | discount | total_amount | payment_method |
-|---------|------------|-----------|------------|--------------|-------------|---------------|----------|--------|----------|--------------|----------------|
-| 1       | 2023-01-01 | 10:30:00  | 101        | Laptop       | 201         | Arjun         | 2        | 50000  | 5000     | 95000        | Credit Card    |
-| 2       | 2023-01-02 | 11:15:00  | 102        | Mobile       | 202         | Bhavya        | 1        | 20000  | 2000     | 18000        | Debit Card     |
-| 3       | 2023-01-03 | 12:00:00  | 103        | Tablet       | 203         | Chaitanya     | 3        | 15000  | 4500     | 40500        | Cash           |
-| 4       | 2023-01-04 | 13:45:00  | 104        | TV           | 204         | Deepak        | 1        | 30000  | 3000     | 27000        | Credit Card    |
-| 5       | 2023-01-05 | 14:30:00  | 105        | Headphones   | 205         | Esha          | 4        | 2000   | 200      | 7200         | Debit Card     |
-| 6       | 2023-01-06 | 15:15:00  | 101        | Laptop       | 206         | Farhan        | 2        | 50000  | 5000     | 95000        | Credit Card    |
-| 7       | 2023-01-07 | 16:00:00  | 102        | Mobile       | 207         | Gauri         | 1        | 20000  | 2000     | 18000        | Debit Card     |
-| 8       | 2023-01-08 | 17:30:00  | 103        | Tablet       | 208         | Harsh         | 3        | 15000  | 4500     | 40500        | Cash           |
-| 9       | 2023-01-09 | 18:45:00  | 104        | TV           | 209         | Ishita        | 1        | 30000  | 3000     | 27000        | Credit Card    |
-| 10      | 2023-01-10 | 19:15:00  | 105        | Headphones   | 210         | Jai           | 4        | 2000   | 200      | 7200         | Debit Card     |
-| 11      | 2023-01-11 | 20:00:00  | 106        | Speaker      | 211         | Kritika       | 2        | 5000   | 500      | 9500         | Cash           |
-| 12      | 2023-01-12 | 21:30:00  | 107        | Keyboard     | 212         | Laksh         | 1        | 3000   | 300      | 2700         | Credit Card    |
-| 13      | 2023-01-13 | 22:45:00  | 108        | Mouse        | 213         | Meera         | 3        | 1000   | 100      | 2700         | Debit Card     |
-| 14      | 2023-01-14 | 23:15:00  | 109        | Monitor      | 214         | Neha          | 1        | 10000  | 1000     | 9000         | Cash           |
-| 15      | 2023-01-15 | 00:30:00  | 110        | Printer      | 215         | Om            | 2        | 8000   | 800      | 15200        | Credit Card    |
-| 16      | 2023-01-16 | 01:15:00  | 111        | Scanner      | 216         | Priya         | 1        | 12000  | 1200     | 10800        | Debit Card     |
-| 17      | 2023-01-17 | 02:00:00  | 112        | Camera       | 217         | Rahul         | 1        | 50000  | 5000     | 45000        | Credit Card    |
-| 18      | 2023-01-18 | 03:30:00  | 113        | Lens         | 218         | Sneha         | 1        | 20000  | 2000     | 18000        | Debit Card     |
-| 19      | 2023-01-19 | 04:45:00  | 114        | Tripod       | 219         | Tanmay        | 3        | 5000   | 500      | 13500        | Cash           |
-| 20      | 2023-01-20 | 05:15:00  | 115        | Flash Drive  | 220         | Usha          | 5        | 500    | 50       | 2250         | Credit Card    |
+| sale_id | sale_date  | sale_time  | product_id | product_name | customer_id | customer_name | quantity | price  | total_amount |
+|---------|------------|------------|------------|--------------|-------------|---------------|----------|--------|--------------|
+| 1       | 2023-01-01 | 10:30:00   | 101        | Laptop       | 201         | Arjun         | 2        | 50000  | 95000        |
+| 2       | 2023-01-02 | 11:15:00   | 102        | Mobile       | 202         | Bhavya        | 1        | 20000  | 18000        |
+| 3       | 2023-01-03 | 12:00:00   | 103        | Tablet       | 203         | Chaitanya     | 3        | 15000  | 40500        |
+| 4       | 2023-01-04 | 13:45:00   | 104        | TV           | 204         | Deepak        | 1        | 30000  | 27000        |
+| 5       | 2023-01-05 | 14:30:00   | 105        | Headphones   | 205         | Esha          | 4        | 2000   | 7200         |
+| 6       | 2023-01-06 | 15:15:00   | 101        | Laptop       | 206         | Farhan        | 2        | 50000  | 95000        |
+| 7       | 2023-01-07 | 16:00:00   | 102        | Mobile       | 207         | Gauri         | 1        | 20000  | 18000        |
+| 8       | 2023-01-08 | 17:30:00   | 103        | Tablet       | 208         | Harsh         | 3        | 15000  | 40500        |
+| 9       | 2023-01-09 | 18:45:00   | 104        | TV           | 209         | Ishita        | 1        | 30000  | 27000        |
+| 10      | 2023-01-10 | 19:15:00   | 105        | Headphones   | 210         | Jai           | 4        | 2000   | 7200         |
+
+---
 
 ### Questions
 
@@ -45,16 +37,6 @@ GROUP BY product_name;
 | Tablet       | 81000       |
 | TV           | 54000       |
 | Headphones   | 14400       |
-| Speaker      | 9500        |
-| Keyboard     | 2700        |
-| Mouse        | 2700        |
-| Monitor      | 9000        |
-| Printer      | 15200       |
-| Scanner      | 10800       |
-| Camera       | 45000       |
-| Lens         | 18000       |
-| Tripod       | 13500       |
-| Flash Drive  | 2250        |
 
 ---
 
@@ -76,16 +58,6 @@ GROUP BY product_name;
 | Tablet       | 4500             |
 | TV           | 3000             |
 | Headphones   | 200              |
-| Speaker      | 500              |
-| Keyboard     | 300              |
-| Mouse        | 100              |
-| Monitor      | 1000             |
-| Printer      | 800              |
-| Scanner      | 1200             |
-| Camera       | 5000             |
-| Lens         | 2000             |
-| Tripod       | 500              |
-| Flash Drive  | 50               |
 
 ---
 
@@ -124,25 +96,6 @@ LIMIT 1;
 | customer_name | purchase_count |
 |---------------|----------------|
 | Arjun         | 2              |
-| Bhavya        | 2              |
-| Chaitanya     | 2              |
-| Deepak        | 2              |
-| Esha          | 2              |
-| Farhan        | 2              |
-| Gauri         | 2              |
-| Harsh         | 2              |
-| Ishita        | 2              |
-| Jai           | 2              |
-| Kritika       | 2              |
-| Laksh         | 2              |
-| Meera         | 2              |
-| Neha          | 2              |
-| Om            | 2              |
-| Priya         | 2              |
-| Rahul         | 2              |
-| Sneha         | 2              |
-| Tanmay        | 2              |
-| Usha          | 2              |
 
 ---
 
@@ -169,16 +122,6 @@ GROUP BY sale_date;
 | 2023-01-08 | 40500       | 40500         |
 | 2023-01-09 | 27000       | 27000         |
 | 2023-01-10 | 7200        | 7200          |
-| 2023-01-11 | 9500        | 9500          |
-| 2023-01-12 | 2700        | 2700          |
-| 2023-01-13 | 2700        | 2700          |
-| 2023-01-14 | 9000        | 9000          |
-| 2023-01-15 | 15200       | 15200         |
-| 2023-01-16 | 10800       | 10800         |
-| 2023-01-17 | 45000       | 45000         |
-| 2023-01-18 | 18000       | 18000         |
-| 2023-01-19 | 13500       | 13500         |
-| 2023-01-20 | 2250        | 2250          |
 
 ---
 
@@ -211,16 +154,6 @@ ORDER BY
 | 2023-01-09 | TV           | 27000        | 54000                   |
 | 2023-01-05 | Headphones   | 7200         | 7200                    |
 | 2023-01-10 | Headphones   | 7200         | 14400                   |
-| 2023-01-11 | Speaker      | 9500         | 9500                    |
-| 2023-01-12 | Keyboard     | 2700         | 2700                    |
-| 2023-01-13 | Mouse        | 2700         | 2700                    |
-| 2023-01-14 | Monitor      | 9000         | 9000                    |
-| 2023-01-15 | Printer      | 15200        | 15200                   |
-| 2023-01-16 | Scanner      | 10800        | 10800                   |
-| 2023-01-17 | Camera       | 45000        | 45000                   |
-| 2023-01-18 | Lens         | 18000        | 18000                   |
-| 2023-01-19 | Tripod       | 13500        | 13500                   |
-| 2023-01-20 | Flash Drive  | 2250         | 2250                    |
 
 ---
 
@@ -282,16 +215,6 @@ ORDER BY
 | TV           | 2023-02-01| 27000         | 27000                | 0.00                    |
 | Headphones   | 2023-01-01| 7200          | NULL                 | NULL                    |
 | Headphones   | 2023-02-01| 7200          | 7200                 | 0.00                    |
-| Speaker      | 2023-01-01| 9500          | NULL                 | NULL                    |
-| Keyboard     | 2023-01-01| 2700          | NULL                 | NULL                    |
-| Mouse        | 2023-01-01| 2700          | NULL                 | NULL                    |
-| Monitor      | 2023-01-01| 9000          | NULL                 | NULL                    |
-| Printer      | 2023-01-01| 15200         | NULL                 | NULL                    |
-| Scanner      | 2023-01-01| 10800         | NULL                 | NULL                    |
-| Camera       | 2023-01-01| 45000         | NULL                 | NULL                    |
-| Lens         | 2023-01-01| 18000         | NULL                 | NULL                    |
-| Tripod       | 2023-01-01| 13500         | NULL                 | NULL                    |
-| Flash Drive  | 2023-01-01| 2250          | NULL                 | NULL                    |
 
 ---
 
@@ -345,16 +268,6 @@ GROUP BY
 | Tablet       | 10.00                       |
 | TV           | 10.00                       |
 | Headphones   | 2.50                        |
-| Speaker      | 10.00                       |
-| Keyboard     | 10.00                       |
-| Mouse        | 10.00                       |
-| Monitor      | 10.00                       |
-| Printer      | 10.00                       |
-| Scanner      | 10.00                       |
-| Camera       | 10.00                       |
-| Lens         | 10.00                       |
-| Tripod       | 10.00                       |
-| Flash Drive  | 10.00                       |
 
 ---
 
@@ -402,16 +315,6 @@ LIMIT 1;
 -- | 103        | 1           |
 -- | 104        | 1           |
 -- | 105        | 2           |
--- | 106        | 2           |
--- | 107        | 2           |
--- | 108        | 2           |
--- | 109        | 1           |
--- | 110        | 1           |
--- | 111        | 1           |
--- | 112        | 1           |
--- | 113        | 2           |
--- | 114        | 2           |
--- | 115        | 2           |
 
 SELECT 
     c.category_name, 
@@ -430,8 +333,8 @@ GROUP BY
 
 | category_name | total_revenue |
 |---------------|---------------|
-| Electronics   | 400200        |
-| Accessories   | 96300         |
+| Electronics   | 324000        |
+| Accessories   | 14400         |
 
 ---
 
@@ -457,16 +360,6 @@ GROUP BY
 | Tablet       | 3.00                  |
 | TV           | 1.00                  |
 | Headphones   | 4.00                  |
-| Speaker      | 2.00                  |
-| Keyboard     | 1.00                  |
-| Mouse        | 3.00                  |
-| Monitor      | 1.00                  |
-| Printer      | 2.00                  |
-| Scanner      | 1.00                  |
-| Camera       | 1.00                  |
-| Lens         | 1.00                  |
-| Tripod       | 3.00                  |
-| Flash Drive  | 5.00                  |
 
 ---
 
@@ -524,17 +417,7 @@ ORDER BY
 | Tablet       | 81000         | 16.58              |
 | TV           | 54000         | 11.05              |
 | Mobile       | 36000         | 7.37               |
-| Camera       | 45000         | 9.21               |
 | Headphones   | 14400         | 2.95               |
-| Speaker      | 9500          | 1.94               |
-| Tripod       | 13500         | 2.76               |
-| Printer      | 15200         | 3.11               |
-| Flash Drive  | 2250          | 0.46               |
-| Lens         | 18000         | 3.68               |
-| Scanner      | 10800         | 2.21               |
-| Monitor      | 9000          | 1.84               |
-| Keyboard     | 2700          | 0.55               |
-| Mouse        | 2700          | 0.55               |
 
 ---
 
@@ -660,10 +543,8 @@ ORDER BY
 
 | category_name | month     | total_sales |
 |---------------|-----------|-------------|
-| Accessories   | 2023-01-01| 4700        |
-| Accessories   | 2023-02-01| 91600       |
-| Electronics   | 2023-01-01| 376500      |
-| Electronics   | 2023-02-01| 23700       |
+| Accessories   | 2023-01-01| 14400       |
+| Electronics   | 2023-01-01| 324000      |
 
 ---
 
@@ -684,8 +565,7 @@ GROUP BY
 
 | month     | distinct_customers |
 |-----------|--------------------|
-| 2023-01-01| 20                 |
-| 2023-02-01| 0                  |
+| 2023-01-01| 10                 |
 
 ---
 
@@ -717,16 +597,6 @@ GROUP BY
 | Harsh         | 40500       | 1               |
 | Ishita        | 27000       | 1               |
 | Jai           | 7200        | 1               |
-| Kritika       | 9500        | 1               |
-| Laksh         | 2700        | 1               |
-| Meera         | 2700        | 1               |
-| Neha          | 9000        | 1               |
-| Om            | 15200       | 1               |
-| Priya         | 10800       | 1               |
-| Rahul         | 45000       | 1               |
-| Sneha         | 18000       | 1               |
-| Tanmay        | 13500       | 1               |
-| Usha          | 2250        | 1               |
 
 ---
 
@@ -760,16 +630,6 @@ ORDER BY
 | 2023-01-08 | Tablet       | 40500       |
 | 2023-01-09 | TV           | 27000       |
 | 2023-01-10 | Headphones   | 7200        |
-| 2023-01-11 | Speaker      | 9500        |
-| 2023-01-12 | Keyboard     | 2700        |
-| 2023-01-13 | Mouse        | 2700        |
-| 2023-01-14 | Monitor      | 9000        |
-| 2023-01-15 | Printer      | 15200       |
-| 2023-01-16 | Scanner      | 10800       |
-| 2023-01-17 | Camera       | 45000       |
-| 2023-01-18 | Lens         | 18000       |
-| 2023-01-19 | Tripod       | 13500       |
-| 2023-01-20 | Flash Drive  | 2250        |
 
 ---
 
@@ -795,16 +655,6 @@ GROUP BY
 | Tablet       | 40500.00            |
 | TV           | 27000.00            |
 | Headphones   | 7200.00             |
-| Speaker      | 9500.00             |
-| Keyboard     | 2700.00             |
-| Mouse        | 2700.00             |
-| Monitor      | 9000.00             |
-| Printer      | 15200.00            |
-| Scanner      | 10800.00            |
-| Camera       | 45000.00            |
-| Lens         | 18000.00            |
-| Tripod       | 13500.00            |
-| Flash Drive  | 2250.00             |
 
 ---
 
@@ -843,15 +693,5 @@ ORDER BY
 | 2023-01-08 | Electronics   | 40500       | 273200                  |
 | 2023-01-09 | Electronics   | 27000       | 300200                  |
 | 2023-01-10 | Electronics   | 7200        | 307400                  |
-| 2023-01-11 | Accessories   | 9500        | 9500                    |
-| 2023-01-12 | Accessories   | 2700        | 12200                   |
-| 2023-01-13 | Accessories   | 2700        | 14900                   |
-| 2023-01-14 | Accessories   | 9000        | 23900                   |
-| 2023-01-15 | Accessories   | 15200       | 39100                   |
-| 2023-01-16 | Accessories   | 10800       | 49900                   |
-| 2023-01-17 | Accessories   | 45000       | 94900                   |
-| 2023-01-18 | Accessories   | 18000       | 112900                  |
-| 2023-01-19 | Accessories   | 13500       | 126400                  |
-| 2023-01-20 | Accessories   | 2250        | 128650                  |
 
 ---
