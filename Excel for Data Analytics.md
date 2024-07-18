@@ -311,9 +311,7 @@ Here is a sample table for the following questions:
 | B       | South  | 7000  | 2024-01-05 | Furniture | 5%       | 150      | 6000   | 7500    | 1500   |
 | C       | East   | 4000  | 2024-01-10 | Clothing  | 20%      | 200      | 3000   | 5000    | 2000   |
 | D       | West   | 6000  | 2024-01-15 | Electronics| 15%      | 120      | 5000   | 7000    | 2000   |
-| E       | North  | 8000  | 
-
-2024-01-20 | Furniture | 10%      | 180      | 7000   | 9000    | 2000   |
+| E       | North  | 8000  | 2024-01-20 | Furniture | 10%      | 180      | 7000   | 9000    | 2000   |
 
 #### 31. How do you calculate the total revenue using the sample table above?
 **Answer:**  
