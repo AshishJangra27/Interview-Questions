@@ -19,10 +19,10 @@
 
 ### Why do you think you should explore these resources?
 
-- **Comprehensive Coverage:** Each guide has a wide range of questions covering basic to advanced levels.
+- **Comprehensive Coverage:** Each guide has questions covering basic to advanced levels.
 - **Practical Examples:** Real-world examples to help you understand and apply concepts effectively.
-- **Easy to Follow:** Simple language and clear explanations make these guides easy to understand, even if you're just starting out.
-- **Focused Topics:** Each guide focuses on specific topics, making it easier to target your study and preparation.
+- **Easy to Follow:** Simple language and clear explanations make these guides easy to understand, even if you're just starting.
+- **Focused Topics:** Each guide focuses on specific topics, making targeting your study and preparation easier.
 
 ---
 
