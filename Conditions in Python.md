@@ -1,757 +1,828 @@
-# Practical If-Else and Nested If-Else Exercises
+# 50 Python Conditional Questions and Answers
 
-Below are 50 practical Python practice questions focusing on **if-else**, **nested if-else**,
+Below are 50 practical Python questions focusing on **if**, **nested if-else**, and multiple **elif**
+
+Each question includes:
+- A scenario or requirement
+- A code snippet demonstrating one possible solution
 
 ---
 
+### 1. Check if a number is even or odd.
+**Answer:**  
+Use the modulo operator `%` to determine if the number is divisible by 2.
 ```python
-# Q1: Nested if: Check nationality.
-# If 'India', print 'Namaste'.
-# If 'USA', print 'Hello'.
-# If 'France', print 'Bonjour'.
-# Else print 'Hi'.
-nationality = 'India'
-if nationality == 'India':
-    print('Namaste')
-elif nationality == 'USA':
-    print('Hello')
-elif nationality == 'France':
-    print('Bonjour')
+num = 10
+if num % 2 == 0:
+    print("Even")
 else:
-    print('Hi')
+    print("Odd")
 ```
 
+---
+
+### 2. Check if a number is positive, negative, or zero.
+**Answer:**  
+Use if-elif-else conditions to classify the number.
 ```python
-# Q2: Nested if: If income > 1000000, then if >2000000: 'Very High', else 'High'.
-# Else if income > 500000: 'Medium', else 'Low'.
-income = 1500000
-if income > 1000000:
-    if income > 2000000:
-        print('Very High')
+num = -5
+if num > 0:
+    print("Positive")
+elif num < 0:
+    print("Negative")
+else:
+    print("Zero")
+```
+
+---
+
+### 3. Determine if a character is a vowel or consonant (assume input is a single lowercase letter).
+**Answer:**  
+Use if-else to check membership in vowels.
+```python
+ch = 'e'
+if ch == 'a' or ch == 'e' or ch == 'i' or ch == 'o' or ch == 'u':
+    print("Vowel")
+else:
+    print("Consonant")
+```
+
+---
+
+### 4. Check if a year is a leap year.
+**Answer:**  
+A leap year is divisible by 400, or divisible by 4 but not by 100.
+```python
+year = 2020
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print("Leap Year")
+else:
+    print("Not Leap Year")
+```
+
+---
+
+### 5. Determine a person's stage of life (child, teen, adult, senior) based on age.
+**Answer:**  
+Use multiple elif conditions for ranges.
+```python
+age = 45
+if age < 13:
+    print("Child")
+elif age < 20:
+    print("Teen")
+elif age < 60:
+    print("Adult")
+else:
+    print("Senior")
+```
+
+---
+
+### 6. Check if a password meets length criteria (at least 8 characters).
+**Answer:**  
+Use if-else to check string length.
+```python
+password = "pass1234"
+if len(password) >= 8:
+    print("Strong password")
+else:
+    print("Weak password")
+```
+
+---
+
+### 7. Nested if: Check if a number is positive, and if so, whether it's even or odd.
+**Answer:**  
+First check positivity, then even/odd inside another if.
+```python
+num = 9
+if num > 0:
+    if num % 2 == 0:
+        print("Positive Even")
     else:
-        print('High')
-elif income > 500000:
-    print('Medium')
+        print("Positive Odd")
 else:
-    print('Low')
+    print("Not Positive")
 ```
 
+---
+
+### 8. Check if two numbers are equal, or if not, determine which is larger.
+**Answer:**  
+Use if-elif-else to compare.
 ```python
-# Q3: Multi-elif: Check car_color.
-# 'red'->'Stop sign color', 'green'->'Go color', 'yellow'->'Caution', else 'Unknown'.
-car_color = 'yellow'
-if car_color == 'red':
-    print('Stop sign color')
-elif car_color == 'green':
-    print('Go color')
-elif car_color == 'yellow':
-    print('Caution')
+a = 10
+b = 15
+if a == b:
+    print("Equal")
+elif a > b:
+    print("a is larger")
 else:
-    print('Unknown')
+    print("b is larger")
 ```
 
+---
+
+### 9. Determine if a given letter is uppercase, lowercase, or neither.
+**Answer:**  
+Use str methods isupper() and islower().
 ```python
-# Q4: Nested if: If user_age >=18:
-#   if age<21 print 'Adult but no alcohol', else 'Adult with alcohol'
-# else 'Minor'.
-user_age = 19
-if user_age >= 18:
-    if user_age < 21:
-        print('Adult but no alcohol')
+ch = 'H'
+if ch.isupper():
+    print("Uppercase")
+elif ch.islower():
+    print("Lowercase")
+else:
+    print("Neither uppercase nor lowercase")
+```
+
+---
+
+### 10. Check if a number is divisible by both 3 and 5.
+**Answer:**  
+Use multiple conditions with `and`.
+```python
+num = 30
+if num % 3 == 0 and num % 5 == 0:
+    print("Divisible by 3 and 5")
+else:
+    print("Not divisible by both")
+```
+
+---
+
+### 11. Determine grade based on score: A(>=90), B(>=80), C(>=70), else F.
+**Answer:**  
+Use multiple elif conditions.
+```python
+score = 85
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+elif score >= 70:
+    print("C")
+else:
+    print("F")
+```
+
+---
+
+### 12. Check if a character is a digit.
+**Answer:**  
+Use str.isdigit().
+```python
+ch = '5'
+if ch.isdigit():
+    print("Digit")
+else:
+    print("Not a digit")
+```
+
+---
+
+### 13. Nested if: If an integer is positive, check if greater than 100 or not.
+**Answer:**  
+Check positivity, then range.
+```python
+num = 150
+if num > 0:
+    if num > 100:
+        print("Positive and greater than 100")
     else:
-        print('Adult with alcohol')
+        print("Positive but 100 or less")
 else:
-    print('Minor')
+    print("Not positive")
 ```
 
+---
+
+### 14. Determine if a temperature in Celsius is freezing (<0), cold (<15), warm (<25), or hot (else).
+**Answer:**  
+Use multiple elif for temperature ranges.
 ```python
-# Q5: Multi-elif: Temperature ranges:
-# <0='Freezing', <15='Cold', <25='Warm', else 'Hot'.
 temp = 10
 if temp < 0:
-    print('Freezing')
+    print("Freezing")
 elif temp < 15:
-    print('Cold')
+    print("Cold")
 elif temp < 25:
-    print('Warm')
+    print("Warm")
 else:
-    print('Hot')
+    print("Hot")
 ```
 
+---
+
+### 15. Check if a given number ends with digit 5.
+**Answer:**  
+Convert to string and check last character.
 ```python
-# Q6: Nested if: If exam_score >=90: 'A'
-# Else if >=80: if >=85:'B+' else:'B'
-# Else 'Below B'.
-exam_score = 83
-if exam_score >= 90:
-    print('A')
-elif exam_score >= 80:
-    if exam_score >= 85:
-        print('B+')
+num = 75
+num_str = str(num)
+if num_str.endswith('5'):
+    print("Ends with 5")
+else:
+    print("Does not end with 5")
+```
+
+---
+
+### 16. Nested if: Check if a number is non-negative, then check if it's zero or positive.
+**Answer:**  
+Check >=0, then zero or positive inside another if.
+```python
+num = 0
+if num >= 0:
+    if num == 0:
+        print("Zero")
     else:
-        print('B')
+        print("Positive")
 else:
-    print('Below B')
+    print("Negative")
 ```
 
+---
+
+### 17. Determine if a character is a punctuation mark (only check . , ! ?).
+**Answer:**  
+Use if-elif-else with character comparisons.
 ```python
-# Q7: Multi-elif: Day number (1=Mon,...7=Sun)
-# Mon-Fri='Workday', Sat='Half-day', Sun='Holiday', else 'Invalid'.
-day_num = 6
-if day_num == 1 or day_num == 2 or day_num == 3 or day_num == 4 or day_num == 5:
-    print('Workday')
-elif day_num == 6:
-    print('Half-day')
-elif day_num == 7:
-    print('Holiday')
+ch = '?'
+if ch == '.' or ch == ',' or ch == '!' or ch == '?':
+    print("Punctuation")
 else:
-    print('Invalid')
+    print("Not punctuation")
 ```
 
+---
+
+### 18. Check if a given name starts with a vowel.
+**Answer:**  
+Check first character for vowels.
 ```python
-# Q8: Nested if: If user_role='admin':
-#   if active=True: 'Full Access', else 'Admin not active'
-# else 'Limited Access'.
+name = "Ashish"
+first_char = name[0].lower()
+if first_char == 'a' or first_char == 'e' or first_char == 'i' or first_char == 'o' or first_char == 'u':
+    print("Starts with vowel")
+else:
+    print("Does not start with vowel")
+```
+
+---
+
+### 19. Multi-elif: Determine time of day by hour (0-23):  
+- <6: Early Morning  
+- <12: Morning  
+- <18: Afternoon  
+- <24: Night  
+**Answer:**  
+Use multiple elif conditions.
+```python
+hour = 14
+if hour < 6:
+    print("Early Morning")
+elif hour < 12:
+    print("Morning")
+elif hour < 18:
+    print("Afternoon")
+elif hour < 24:
+    print("Night")
+else:
+    print("Invalid hour")
+```
+
+---
+
+### 20. Check if a username length is valid (5 to 10 chars).
+**Answer:**  
+Use if-elif-else to check length ranges.
+```python
+username = "Ashish"
+length = len(username)
+if length < 5:
+    print("Too short")
+elif length > 10:
+    print("Too long")
+else:
+    print("Valid length")
+```
+
+---
+
+### 21. Nested if: If a number is even, check if it is also divisible by 4.
+**Answer:**  
+Check even first, then divisibility by 4.
+```python
+num = 8
+if num % 2 == 0:
+    if num % 4 == 0:
+        print("Even and divisible by 4")
+    else:
+        print("Even but not divisible by 4")
+else:
+    print("Odd")
+```
+
+---
+
+### 22. Determine if a letter is uppercase vowel, lowercase vowel, uppercase consonant, or lowercase consonant.
+**Answer:**  
+Use multiple if-elif conditions.
+```python
+ch = 'U'
+vowels = 'aeiouAEIOU'
+if ch in vowels:
+    if ch.isupper():
+        print("Uppercase vowel")
+    else:
+        print("Lowercase vowel")
+else:
+    if ch.isupper():
+        print("Uppercase consonant")
+    else:
+        print("Lowercase consonant")
+```
+
+---
+
+### 23. Check if a number is within a certain range (e.g., between 1 and 100).
+**Answer:**  
+Use if-else with range conditions.
+```python
+num = 50
+if 1 <= num <= 100:
+    print("Within range")
+else:
+    print("Out of range")
+```
+
+---
+
+### 24. Multi-elif: Classify a number by digit count:  
+- Single-digit (|num| < 10)  
+- Two-digit (|num| < 100)  
+- Three or more digits (|num| >= 100)
+**Answer:**  
+Use abs() and multiple elif.
+```python
+num = 999
+abs_num = abs(num)
+if abs_num < 10:
+    print("Single-digit")
+elif abs_num < 100:
+    print("Two-digit")
+else:
+    print("Three or more digits")
+```
+
+---
+
+### 25. Nested if: If a number is positive, check if it's prime or not by a simple method (just check divisibility by 2 and 3).
+**Answer:**  
+This is limited without loops or data structures, but let's just show conditions.
+```python
+num = 9
+if num > 0:
+    if num == 2 or num == 3:
+        print("Prime")
+    elif num % 2 != 0 and num % 3 != 0:
+        print("Likely prime")
+    else:
+        print("Not prime")
+else:
+    print("Not positive")
+```
+
+---
+
+### 26. Check if a given string is uppercase, lowercase, or mixed.
+**Answer:**  
+Use str.isupper() and str.islower().
+```python
+text = "HELLO"
+if text.isupper():
+    print("All uppercase")
+elif text.islower():
+    print("All lowercase")
+else:
+    print("Mixed case")
+```
+
+---
+
+### 27. Multi-elif: BMI Categories:  
+- <18.5: Underweight  
+- <25: Normal  
+- <30: Overweight  
+- else: Obese
+**Answer:**  
+Use multiple elif for ranges.
+```python
+bmi = 22
+if bmi < 18.5:
+    print("Underweight")
+elif bmi < 25:
+    print("Normal")
+elif bmi < 30:
+    print("Overweight")
+else:
+    print("Obese")
+```
+
+---
+
+### 28. Check if a character is a whitespace.
+**Answer:**  
+Check if char == ' '.
+```python
+ch = ' '
+if ch == ' ':
+    print("Whitespace")
+else:
+    print("Not whitespace")
+```
+
+---
+
+### 29. Nested if: If a number is non-negative, check if it's an exact multiple of 10.
+**Answer:**  
+First check non-negative, then divisibility by 10.
+```python
+num = 40
+if num >= 0:
+    if num % 10 == 0:
+        print("Non-negative multiple of 10")
+    else:
+        print("Non-negative but not multiple of 10")
+else:
+    print("Negative")
+```
+
+---
+
+### 30. Multi-elif: Determine shipping cost by weight category:  
+- <=1kg: $5  
+- <=5kg: $10  
+- <=20kg: $20  
+- else: $50
+**Answer:**  
+Use multiple elif.
+```python
+weight = 6
+if weight <= 1:
+    print("$5")
+elif weight <= 5:
+    print("$10")
+elif weight <= 20:
+    print("$20")
+else:
+    print("$50")
+```
+
+---
+
+### 31. Check if a given string starts with a capital letter.
+**Answer:**  
+Check first char using isupper().
+```python
+text = "Hello"
+if text and text[0].isupper():
+    print("Starts with capital letter")
+else:
+    print("Does not start with capital letter")
+```
+
+---
+
+### 32. Nested if: If a number is positive, check if it is a perfect square of an integer (just check num==4 or num==9 for simplicity).
+**Answer:**  
+Restricted check without loops.
+```python
+num = 9
+if num > 0:
+    if num == 4 or num == 9:
+        print("Positive perfect square (from limited check)")
+    else:
+        print("Positive but not perfect square (from limited check)")
+else:
+    print("Not positive")
+```
+
+---
+
+### 33. Multi-elif: Classify an angle (in degrees):  
+- <90: Acute  
+- ==90: Right  
+- <180: Obtuse  
+- ==180: Straight  
+- else: Reflex
+**Answer:**  
+Use multiple if-elif.
+```python
+angle = 120
+if angle < 90:
+    print("Acute")
+elif angle == 90:
+    print("Right")
+elif angle < 180:
+    print("Obtuse")
+elif angle == 180:
+    print("Straight")
+else:
+    print("Reflex")
+```
+
+---
+
+### 34. Check if a number is close to 100 (within +/-10).
+**Answer:**  
+Use abs difference.
+```python
+num = 95
+if abs(num - 100) <= 10:
+    print("Close to 100")
+else:
+    print("Not close")
+```
+
+---
+
+### 35. Nested if: Check if a given code is 'admin', if yes check if 'active' is True, else print restricted access.
+**Answer:**  
+Simulate user_role and active condition.
+```python
 user_role = 'admin'
 active = True
 if user_role == 'admin':
-    if active == True:
-        print('Full Access')
+    if active:
+        print("Full Access")
     else:
-        print('Admin not active')
+        print("Admin not active")
 else:
-    print('Limited Access')
+    print("Restricted Access")
 ```
 
+---
+
+### 36. Multi-elif: Classify speed (km/h):  
+- <30: Slow  
+- <60: Normal  
+- <100: Fast  
+- else: Very Fast
+**Answer:**  
+Use multiple elif.
 ```python
-# Q9: Multi-elif: Speed zones:
-# <30='Slow zone', <60='Normal', <90='Fast', else 'Very Fast'.
 speed = 75
 if speed < 30:
-    print('Slow zone')
+    print("Slow")
 elif speed < 60:
-    print('Normal')
-elif speed < 90:
-    print('Fast')
+    print("Normal")
+elif speed < 100:
+    print("Fast")
 else:
-    print('Very Fast')
+    print("Very Fast")
 ```
 
+---
+
+### 37. Determine if a given character is uppercase vowel, uppercase consonant, or not an uppercase letter at all.
+**Answer:**  
+Nested logic on uppercase and vowels.
 ```python
-# Q10: Nested if: If budget>1000:
-#   if >2000='Luxury', else='Moderate'
-# Else if >500='Basic', else='Low'.
-budget = 1500
-if budget > 1000:
-    if budget > 2000:
-        print('Luxury')
+ch = 'E'
+if ch.isupper():
+    if ch == 'A' or ch == 'E' or ch == 'I' or ch == 'O' or ch == 'U':
+        print("Uppercase vowel")
     else:
-        print('Moderate')
-elif budget > 500:
-    print('Basic')
+        print("Uppercase consonant")
 else:
-    print('Low')
+    print("Not uppercase letter")
 ```
 
+---
+
+### 38. If a number is negative, print "Negative". If zero, print "Zero". Otherwise, print "Positive".
+**Answer:**  
+Simple if-elif-else.
 ```python
-# Q11: Multi-elif: Letter grade from marks:
-# >=90='A', >=80='B', >=70='C', else='D'.
-marks = 72
-if marks >= 90:
-    print('A')
-elif marks >= 80:
-    print('B')
-elif marks >= 70:
-    print('C')
+num = 0
+if num < 0:
+    print("Negative")
+elif num == 0:
+    print("Zero")
 else:
-    print('D')
+    print("Positive")
 ```
 
+---
+
+### 39. Check if a string is a palindrome (only check first and last character for demonstration).
+**Answer:**  
+No data structures, just basic conditions.
 ```python
-# Q12: Nested if: If candidate_age>=18:
-#   if >=65:'Senior Voter', else:'Adult Voter'
-# else:'Underage'.
-candidate_age = 70
-if candidate_age >= 18:
-    if candidate_age >= 65:
-        print('Senior Voter')
-    else:
-        print('Adult Voter')
+text = "madam"
+if text and text[0] == text[-1]:
+    print("Potential palindrome (first and last char match)")
 else:
-    print('Underage')
+    print("Not palindrome based on first and last char")
 ```
 
-```python
-# Q13: Multi-elif: BMI categories:
-# <18.5='Underweight', <25='Normal', <30='Overweight', else='Obese'.
-bmi = 27
-if bmi < 18.5:
-    print('Underweight')
-elif bmi < 25:
-    print('Normal')
-elif bmi < 30:
-    print('Overweight')
-else:
-    print('Obese')
-```
+---
 
+### 40. Multi-elif: Assign a label based on salary:  
+- >100000: "High earner"  
+- >50000: "Mid earner"  
+- >20000: "Low earner"  
+- else: "Very low"
+**Answer:**  
+Use multiple elif.
 ```python
-# Q14: Nested if: If rainfall>50:
-#   if >100='Severe Flood', else='Flood Warning'
-# else 'No Flood'.
-rainfall = 110
-if rainfall > 50:
-    if rainfall > 100:
-        print('Severe Flood')
-    else:
-        print('Flood Warning')
-else:
-    print('No Flood')
-```
-
-```python
-# Q15: Multi-elif: Language codes:
-# 'en'='English', 'fr'='French', 'hi'='Hindi', else='Unknown'.
-lang_code = 'fr'
-if lang_code == 'en':
-    print('English')
-elif lang_code == 'fr':
-    print('French')
-elif lang_code == 'hi':
-    print('Hindi')
-else:
-    print('Unknown')
-```
-
-```python
-# Q16: Nested if: If product_price>500:
-#   if >1000='High-end', else='Mid-range'
-# else 'Budget'.
-product_price = 300
-if product_price > 500:
-    if product_price > 1000:
-        print('High-end')
-    else:
-        print('Mid-range')
-else:
-    print('Budget')
-```
-
-```python
-# Q17: Multi-elif: Age group:
-# <13='Child', <20='Teen', <60='Adult', else='Senior'.
-age = 45
-if age < 13:
-    print('Child')
-elif age < 20:
-    print('Teen')
-elif age < 60:
-    print('Adult')
-else:
-    print('Senior')
-```
-
-```python
-# Q18: Nested if: If electricity_units>500:
-#   if >1000='High Bill', else='Medium Bill'
-# else 'Low Bill'.
-electricity_units = 1200
-if electricity_units > 500:
-    if electricity_units > 1000:
-        print('High Bill')
-    else:
-        print('Medium Bill')
-else:
-    print('Low Bill')
-```
-
-```python
-# Q19: Multi-elif: Meal time by hour:
-# <10='breakfast', <15='lunch', <21='dinner', else='late snack'.
-hour = 16
-if hour < 10:
-    print('breakfast')
-elif hour < 15:
-    print('lunch')
-elif hour < 21:
-    print('dinner')
-else:
-    print('late snack')
-```
-
-```python
-# Q20: Nested if: If password_len>=8:
-#   if has_digit='Strong', else='Moderate'
-# else 'Weak'.
-password = 'abc1234'
-has_digit = ('0' in password or '1' in password or '2' in password or 
-             '3' in password or '4' in password or '5' in password or
-             '6' in password or '7' in password or '8' in password or '9' in password)
-
-if len(password) >= 8:
-    if has_digit:
-        print('Strong')
-    else:
-        print('Moderate')
-else:
-    print('Weak')
-```
-
-```python
-# Q21: Multi-elif: Height check:
-# <150='Short', <170='Below average', <185='Average', else='Tall'.
-height = 160
-if height < 150:
-    print('Short')
-elif height < 170:
-    print('Below average')
-elif height < 185:
-    print('Average')
-else:
-    print('Tall')
-```
-
-```python
-# Q22: Nested if: If tickets_sold>1000:
-#   if >5000='Blockbuster', else='Hit'
-# else if >500='Average', else='Flop'.
-tickets_sold = 600
-if tickets_sold > 1000:
-    if tickets_sold > 5000:
-        print('Blockbuster')
-    else:
-        print('Hit')
-elif tickets_sold > 500:
-    print('Average')
-else:
-    print('Flop')
-```
-
-```python
-# Q23: Multi-elif: Over speed categories:
-# over_speed=0:'Safe', <=10:'Warning', <=20:'Penalty', else:'Severe Penalty'.
-over_speed = 15
-if over_speed == 0:
-    print('Safe')
-elif over_speed <= 10:
-    print('Warning')
-elif over_speed <= 20:
-    print('Penalty')
-else:
-    print('Severe Penalty')
-```
-
-```python
-# Q24: Nested if: If exam_passed=True:
-#   if interview_passed=True:'Job Offer', else:'No Offer'
-# else:'No Offer'.
-exam_passed = True
-interview_passed = False
-if exam_passed == True:
-    if interview_passed == True:
-        print('Job Offer')
-    else:
-        print('No Offer')
-else:
-    print('No Offer')
-```
-
-```python
-# Q25: Multi-elif: Month number:
-# 1='Jan',2='Feb',3='Mar', else='Other month'.
-month_num = 3
-if month_num == 1:
-    print('Jan')
-elif month_num == 2:
-    print('Feb')
-elif month_num == 3:
-    print('Mar')
-else:
-    print('Other month')
-```
-
-```python
-# Q26: Nested if: If score>80:
-#   if >90='Excellent', else='Good'
-# else if >60='Average', else 'Poor'.
-score = 75
-if score > 80:
-    if score > 90:
-        print('Excellent')
-    else:
-        print('Good')
-elif score > 60:
-    print('Average')
-else:
-    print('Poor')
-```
-
-```python
-# Q27: Multi-elif: Credit score rating:
-# >=800='Excellent', >=700='Good', >=600='Fair', else='Poor'.
-credit_score = 650
-if credit_score >= 800:
-    print('Excellent')
-elif credit_score >= 700:
-    print('Good')
-elif credit_score >= 600:
-    print('Fair')
-else:
-    print('Poor')
-```
-
-```python
-# Q28: Nested if: If temperature>30:
-#   if >40='Heatwave', else='Hot'
-# else if >20='Warm', else 'Cool'.
-temperature = 25
-if temperature > 30:
-    if temperature > 40:
-        print('Heatwave')
-    else:
-        print('Hot')
-elif temperature > 20:
-    print('Warm')
-else:
-    print('Cool')
-```
-
-```python
-# Q29: Multi-elif: Salary range:
-# >=100000='Top Earner', >=50000='Middle', >=20000='Low Middle', else='Low'.
 salary = 30000
-if salary >= 100000:
-    print('Top Earner')
-elif salary >= 50000:
-    print('Middle')
-elif salary >= 20000:
-    print('Low Middle')
+if salary > 100000:
+    print("High earner")
+elif salary > 50000:
+    print("Mid earner")
+elif salary > 20000:
+    print("Low earner")
 else:
-    print('Low')
+    print("Very low")
 ```
 
+---
+
+### 41. Nested if: If a character is a letter, check if it is uppercase or lowercase.
+**Answer:**  
+Check if letter using isalpha(), then case.
 ```python
-# Q30: Nested if: If fuel>10:
-#   if >50='Full Tank', else='Partial'
-# else if >0='Low fuel', else 'Empty'.
-fuel = 5
-if fuel > 10:
-    if fuel > 50:
-        print('Full Tank')
+ch = 'G'
+if ch.isalpha():
+    if ch.isupper():
+        print("Uppercase letter")
     else:
-        print('Partial')
-elif fuel > 0:
-    print('Low fuel')
+        print("Lowercase letter")
 else:
-    print('Empty')
+    print("Not a letter")
 ```
 
+---
+
+### 42. Check if a number is exactly divisible by 2, 3, or 5 (just print the first that applies).
+**Answer:**  
+Use multiple if/elif.
 ```python
-# Q31: Multi-elif: Internet speed:
-# >=100='High Speed', >=50='Medium Speed', >=10='Low Speed', else='Very Low'.
-internet_speed = 8
-if internet_speed >= 100:
-    print('High Speed')
-elif internet_speed >= 50:
-    print('Medium Speed')
-elif internet_speed >= 10:
-    print('Low Speed')
+num = 9
+if num % 2 == 0:
+    print("Divisible by 2")
+elif num % 3 == 0:
+    print("Divisible by 3")
+elif num % 5 == 0:
+    print("Divisible by 5")
 else:
-    print('Very Low')
+    print("Not divisible by 2, 3, or 5")
 ```
 
+---
+
+### 43. Determine if a string length is odd or even.
+**Answer:**  
+Use len() % 2.
 ```python
-# Q32: Nested if: If distance>1000:
-#   if >2000='Very Far', else='Far'
-# else if >500='Moderate', else 'Close'.
-distance = 1800
-if distance > 1000:
-    if distance > 2000:
-        print('Very Far')
+text = "Hello"
+if len(text) % 2 == 0:
+    print("Even length")
+else:
+    print("Odd length")
+```
+
+---
+
+### 44. Nested if: If a number > 10, check if it's >50, else just print "Between 10 and 50".
+**Answer:**  
+Two-level check.
+```python
+num = 60
+if num > 10:
+    if num > 50:
+        print("Greater than 50")
     else:
-        print('Far')
-elif distance > 500:
-    print('Moderate')
+        print("Between 10 and 50")
 else:
-    print('Close')
+    print("10 or less")
 ```
 
+---
+
+### 45. Multi-elif: Classify a day number (1=Mon,...7=Sun):  
+- 1-5: Weekday  
+- 6: Saturday  
+- 7: Sunday  
+- else: Invalid
+**Answer:**  
+Use if-elif-else.
 ```python
-# Q33: Multi-elif: Customer rating:
-# 5='Excellent',4='Good',3='Average',2='Below Average',1='Poor', else='Invalid'.
-rating = 4
-if rating == 5:
-    print('Excellent')
-elif rating == 4:
-    print('Good')
-elif rating == 3:
-    print('Average')
-elif rating == 2:
-    print('Below Average')
-elif rating == 1:
-    print('Poor')
+day = 7
+if day >= 1 and day <= 5:
+    print("Weekday")
+elif day == 6:
+    print("Saturday")
+elif day == 7:
+    print("Sunday")
 else:
-    print('Invalid')
+    print("Invalid")
 ```
 
+---
+
+### 46. Check if a variable is None.
+**Answer:**  
+Use `is None`.
 ```python
-# Q34: Nested if: If marks_obtained>80:
-#   if >90='Outstanding', else='Great'
-# else if >50='Okay', else 'Fail'.
-marks_obtained = 55
-if marks_obtained > 80:
-    if marks_obtained > 90:
-        print('Outstanding')
+var = None
+if var is None:
+    print("var is None")
+else:
+    print("var has a value")
+```
+
+---
+
+### 47. Nested if: If a character is a digit, check if it's even or odd digit.
+**Answer:**  
+Check digit first, then numeric value.
+```python
+ch = '4'
+if ch.isdigit():
+    digit_value = int(ch)
+    if digit_value % 2 == 0:
+        print("Even digit")
     else:
-        print('Great')
-elif marks_obtained > 50:
-    print('Okay')
+        print("Odd digit")
 else:
-    print('Fail')
+    print("Not a digit")
 ```
 
+---
+
+### 48. Multi-elif: Classify angle speed in degrees per second:  
+- <1 deg/s: Very slow  
+- <10 deg/s: Slow  
+- <100 deg/s: Moderate  
+- else: Fast
+**Answer:**  
+Use multiple elif.
 ```python
-# Q35: Multi-elif: Weather code:
-# 'S'='Sunny','R'='Rainy','C'='Cloudy','W'='Windy', else='Unknown'.
-weather_code = 'C'
-if weather_code == 'S':
-    print('Sunny')
-elif weather_code == 'R':
-    print('Rainy')
-elif weather_code == 'C':
-    print('Cloudy')
-elif weather_code == 'W':
-    print('Windy')
+speed = 5
+if speed < 1:
+    print("Very slow")
+elif speed < 10:
+    print("Slow")
+elif speed < 100:
+    print("Moderate")
 else:
-    print('Unknown')
+    print("Fast")
 ```
 
+---
+
+### 49. Check if a string starts with 'A' and ends with 'Z'.
+**Answer:**  
+Use conditions on first and last char.
 ```python
-# Q36: Nested if: If num>0:
-#   if even='Positive Even', else='Positive Odd'
-# else if num<0='Negative', else 'Zero'.
-num = 14
-if num > 0:
-    if num % 2 == 0:
-        print('Positive Even')
+text = "ABCZ"
+if text and text[0] == 'A' and text[-1] == 'Z':
+    print("Starts with A and ends with Z")
+else:
+    print("Condition not met")
+```
+
+---
+
+### 50. Nested if: If year is divisible by 4, check if also divisible by 100. If yes, then must be divisible by 400 for leap year.
+**Answer:**  
+Detailed leap year check.
+```python
+year = 2000
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print("Leap Year")
+        else:
+            print("Not Leap Year")
     else:
-        print('Positive Odd')
-elif num < 0:
-    print('Negative')
+        print("Leap Year")
 else:
-    print('Zero')
+    print("Not Leap Year")
 ```
 
-```python
-# Q37: Multi-elif: Year category:
-# <1900='Historic', <2000='20th Century', <2020='Modern', else='Recent'.
-year = 1985
-if year < 1900:
-    print('Historic')
-elif year < 2000:
-    print('20th Century')
-elif year < 2020:
-    print('Modern')
-else:
-    print('Recent')
-```
+---
 
-```python
-# Q38: Nested if: If stock_level>100:
-#   if >500='Surplus', else='Sufficient'
-# else if >0='Limited', else 'Out of stock'.
-stock_level = 50
-if stock_level > 100:
-    if stock_level > 500:
-        print('Surplus')
-    else:
-        print('Sufficient')
-elif stock_level > 0:
-    print('Limited')
-else:
-    print('Out of stock')
-```
+If you found this helpful, please consider following or starring the repository!
 
-```python
-# Q39: Multi-elif: Priority level:
-# 1='High',2='Medium',3='Low', else='No priority'.
-priority = 1
-if priority == 1:
-    print('High')
-elif priority == 2:
-    print('Medium')
-elif priority == 3:
-    print('Low')
-else:
-    print('No priority')
-```
+Follow me on:
+- [LinkedIn](https://www.linkedin.com/in/ashish-jangra/)
+- [GitHub](https://github.com/AshishJangra27)
+- [Kaggle](https://www.kaggle.com/ashishjangra27)
 
-```python
-# Q40: Nested if: If attempts>3:
-#   if >5='Locked Out', else='One last try'
-# else if >0='Try again', else 'No attempt left'.
-attempts = 6
-if attempts > 3:
-    if attempts > 5:
-        print('Locked Out')
-    else:
-        print('One last try')
-elif attempts > 0:
-    print('Try again')
-else:
-    print('No attempt left')
-```
-
-```python
-# Q41: Multi-elif: Temperature scale:
-# 'C'='Celsius', 'F'='Fahrenheit', 'K'='Kelvin', else='Unknown'.
-scale = 'F'
-if scale == 'C':
-    print('Celsius')
-elif scale == 'F':
-    print('Fahrenheit')
-elif scale == 'K':
-    print('Kelvin')
-else:
-    print('Unknown')
-```
-
-```python
-# Q42: Nested if: If storage>100GB:
-#   if >500GB='Large Storage', else='Moderate'
-# else if >50GB='Small', else 'Minimal'.
-storage = 60
-if storage > 100:
-    if storage > 500:
-        print('Large Storage')
-    else:
-        print('Moderate')
-elif storage > 50:
-    print('Small')
-else:
-    print('Minimal')
-```
-
-```python
-# Q43: Multi-elif: Time of day by hour:
-# <6='Early Morning', <12='Morning', <18='Afternoon', <24='Night'.
-hour_of_day = 5
-if hour_of_day < 6:
-    print('Early Morning')
-elif hour_of_day < 12:
-    print('Morning')
-elif hour_of_day < 18:
-    print('Afternoon')
-elif hour_of_day < 24:
-    print('Night')
-else:
-    print('Invalid hour')
-```
-
-```python
-# Q44: Nested if: If cpu_usage>70%:
-#   if >90%='Overloaded', else='High Load'
-# else if >30%='Normal', else 'Low Load'.
-cpu_usage = 95
-if cpu_usage > 70:
-    if cpu_usage > 90:
-        print('Overloaded')
-    else:
-        print('High Load')
-elif cpu_usage > 30:
-    print('Normal')
-else:
-    print('Low Load')
-```
-
-```python
-# Q45: Multi-elif: Check feedback char:
-# 'A'='Excellent', 'B'='Good', 'C'='Fair', 'D'='Poor', else='Unknown'.
-feedback = 'D'
-if feedback == 'A':
-    print('Excellent')
-elif feedback == 'B':
-    print('Good')
-elif feedback == 'C':
-    print('Fair')
-elif feedback == 'D':
-    print('Poor')
-else:
-    print('Unknown')
-```
-
-```python
-# Q46: Nested if: If hours_worked>40:
-#   if >60='Excessive OT', else='Overtime'
-# else if >20='Part-time', else 'Minimal'.
-hours_worked = 62
-if hours_worked > 40:
-    if hours_worked > 60:
-        print('Excessive OT')
-    else:
-        print('Overtime')
-elif hours_worked > 20:
-    print('Part-time')
-else:
-    print('Minimal')
-```
-
-```python
-# Q47: Multi-elif: Product rating:
-# >=4.5='Excellent', >=4='Good', >=3='Average', else='Poor'.
-product_rating = 3.5
-if product_rating >= 4.5:
-    print('Excellent')
-elif product_rating >= 4:
-    print('Good')
-elif product_rating >= 3:
-    print('Average')
-else:
-    print('Poor')
-```
-
-```python
-# Q48: Nested if: If grade_level>10:
-#   if >12='College', else='High School'
-# else if >5='Primary', else 'Kindergarten'.
-grade_level = 11
-if grade_level > 10:
-    if grade_level > 12:
-        print('College')
-    else:
-        print('High School')
-elif grade_level > 5:
-    print('Primary')
-else:
-    print('Kindergarten')
-```
-
-```python
-# Q49: Multi-elif: Performance score:
-# >=90='Star', >=75='Good', >=50='Average', else='Needs Improvement'.
-performance_score = 95
-if performance_score >= 90:
-    print('Star')
-elif performance_score >= 75:
-    print('Good')
-elif performance_score >= 50:
-    print('Average')
-else:
-    print('Needs Improvement')
-```
-
-```python
-# Q50: Nested if: If balance>10000:
-#   if >50000='Wealthy', else='Comfortable'
-# else if >0='Stable', else 'Debt'.
-balance = 60000
-if balance > 10000:
-    if balance > 50000:
-        print('Wealthy')
-    else:
-        print('Comfortable')
-elif balance > 0:
-    print('Stable')
-else:
-    print('Debt')
-```
+Stay updated with my latest content and projects!
