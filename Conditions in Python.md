@@ -12,7 +12,7 @@ You can copy and paste the code blocks into a Jupyter notebook or any Python env
 
 ---
 
-'''python
+```python
 # Q1: Nested if: Check nationality.
 # If 'India', print 'Namaste'.
 # If 'USA', print 'Hello'.
@@ -27,9 +27,9 @@ elif nationality == 'France':
     print('Bonjour')
 else:
     print('Hi')
-'''
+```
 
-'''python
+```python
 # Q2: Nested if: If income > 1000000, then if >2000000: 'Very High', else 'High'.
 # Else if income > 500000: 'Medium', else 'Low'.
 income = 1500000
@@ -42,9 +42,9 @@ elif income > 500000:
     print('Medium')
 else:
     print('Low')
-'''
+```
 
-'''python
+```python
 # Q3: Multi-elif: Check car_color.
 # 'red'->'Stop sign color', 'green'->'Go color', 'yellow'->'Caution', else 'Unknown'.
 car_color = 'yellow'
@@ -56,9 +56,9 @@ elif car_color == 'yellow':
     print('Caution')
 else:
     print('Unknown')
-'''
+```
 
-'''python
+```python
 # Q4: Nested if: If user_age >=18:
 #   if age<21 print 'Adult but no alcohol', else 'Adult with alcohol'
 # else 'Minor'.
@@ -70,9 +70,9 @@ if user_age >= 18:
         print('Adult with alcohol')
 else:
     print('Minor')
-'''
+```
 
-'''python
+```python
 # Q5: Multi-elif: Temperature ranges:
 # <0='Freezing', <15='Cold', <25='Warm', else 'Hot'.
 temp = 10
@@ -84,9 +84,9 @@ elif temp < 25:
     print('Warm')
 else:
     print('Hot')
-'''
+```
 
-'''python
+```python
 # Q6: Nested if: If exam_score >=90: 'A'
 # Else if >=80: if >=85:'B+' else:'B'
 # Else 'Below B'.
@@ -100,9 +100,9 @@ elif exam_score >= 80:
         print('B')
 else:
     print('Below B')
-'''
+```
 
-'''python
+```python
 # Q7: Multi-elif: Day number (1=Mon,...7=Sun)
 # Mon-Fri='Workday', Sat='Half-day', Sun='Holiday', else 'Invalid'.
 day_num = 6
@@ -114,9 +114,9 @@ elif day_num == 7:
     print('Holiday')
 else:
     print('Invalid')
-'''
+```
 
-'''python
+```python
 # Q8: Nested if: If user_role='admin':
 #   if active=True: 'Full Access', else 'Admin not active'
 # else 'Limited Access'.
@@ -129,9 +129,9 @@ if user_role == 'admin':
         print('Admin not active')
 else:
     print('Limited Access')
-'''
+```
 
-'''python
+```python
 # Q9: Multi-elif: Speed zones:
 # <30='Slow zone', <60='Normal', <90='Fast', else 'Very Fast'.
 speed = 75
@@ -143,9 +143,9 @@ elif speed < 90:
     print('Fast')
 else:
     print('Very Fast')
-'''
+```
 
-'''python
+```python
 # Q10: Nested if: If budget>1000:
 #   if >2000='Luxury', else='Moderate'
 # Else if >500='Basic', else='Low'.
@@ -159,9 +159,9 @@ elif budget > 500:
     print('Basic')
 else:
     print('Low')
-'''
+```
 
-'''python
+```python
 # Q11: Multi-elif: Letter grade from marks:
 # >=90='A', >=80='B', >=70='C', else='D'.
 marks = 72
@@ -173,9 +173,9 @@ elif marks >= 70:
     print('C')
 else:
     print('D')
-'''
+```
 
-'''python
+```python
 # Q12: Nested if: If candidate_age>=18:
 #   if >=65:'Senior Voter', else:'Adult Voter'
 # else:'Underage'.
@@ -187,9 +187,9 @@ if candidate_age >= 18:
         print('Adult Voter')
 else:
     print('Underage')
-'''
+```
 
-'''python
+```python
 # Q13: Multi-elif: BMI categories:
 # <18.5='Underweight', <25='Normal', <30='Overweight', else='Obese'.
 bmi = 27
@@ -201,9 +201,9 @@ elif bmi < 30:
     print('Overweight')
 else:
     print('Obese')
-'''
+```
 
-'''python
+```python
 # Q14: Nested if: If rainfall>50:
 #   if >100='Severe Flood', else='Flood Warning'
 # else 'No Flood'.
@@ -215,9 +215,9 @@ if rainfall > 50:
         print('Flood Warning')
 else:
     print('No Flood')
-'''
+```
 
-'''python
+```python
 # Q15: Multi-elif: Language codes:
 # 'en'='English', 'fr'='French', 'hi'='Hindi', else='Unknown'.
 lang_code = 'fr'
@@ -229,9 +229,9 @@ elif lang_code == 'hi':
     print('Hindi')
 else:
     print('Unknown')
-'''
+```
 
-'''python
+```python
 # Q16: Nested if: If product_price>500:
 #   if >1000='High-end', else='Mid-range'
 # else 'Budget'.
@@ -243,9 +243,9 @@ if product_price > 500:
         print('Mid-range')
 else:
     print('Budget')
-'''
+```
 
-'''python
+```python
 # Q17: Multi-elif: Age group:
 # <13='Child', <20='Teen', <60='Adult', else='Senior'.
 age = 45
@@ -257,9 +257,9 @@ elif age < 60:
     print('Adult')
 else:
     print('Senior')
-'''
+```
 
-'''python
+```python
 # Q18: Nested if: If electricity_units>500:
 #   if >1000='High Bill', else='Medium Bill'
 # else 'Low Bill'.
@@ -271,9 +271,9 @@ if electricity_units > 500:
         print('Medium Bill')
 else:
     print('Low Bill')
-'''
+```
 
-'''python
+```python
 # Q19: Multi-elif: Meal time by hour:
 # <10='breakfast', <15='lunch', <21='dinner', else='late snack'.
 hour = 16
@@ -285,9 +285,9 @@ elif hour < 21:
     print('dinner')
 else:
     print('late snack')
-'''
+```
 
-'''python
+```python
 # Q20: Nested if: If password_len>=8:
 #   if has_digit='Strong', else='Moderate'
 # else 'Weak'.
@@ -303,9 +303,9 @@ if len(password) >= 8:
         print('Moderate')
 else:
     print('Weak')
-'''
+```
 
-'''python
+```python
 # Q21: Multi-elif: Height check:
 # <150='Short', <170='Below average', <185='Average', else='Tall'.
 height = 160
@@ -317,9 +317,9 @@ elif height < 185:
     print('Average')
 else:
     print('Tall')
-'''
+```
 
-'''python
+```python
 # Q22: Nested if: If tickets_sold>1000:
 #   if >5000='Blockbuster', else='Hit'
 # else if >500='Average', else='Flop'.
@@ -333,9 +333,9 @@ elif tickets_sold > 500:
     print('Average')
 else:
     print('Flop')
-'''
+```
 
-'''python
+```python
 # Q23: Multi-elif: Over speed categories:
 # over_speed=0:'Safe', <=10:'Warning', <=20:'Penalty', else:'Severe Penalty'.
 over_speed = 15
@@ -347,9 +347,9 @@ elif over_speed <= 20:
     print('Penalty')
 else:
     print('Severe Penalty')
-'''
+```
 
-'''python
+```python
 # Q24: Nested if: If exam_passed=True:
 #   if interview_passed=True:'Job Offer', else:'No Offer'
 # else:'No Offer'.
@@ -362,9 +362,9 @@ if exam_passed == True:
         print('No Offer')
 else:
     print('No Offer')
-'''
+```
 
-'''python
+```python
 # Q25: Multi-elif: Month number:
 # 1='Jan',2='Feb',3='Mar', else='Other month'.
 month_num = 3
@@ -376,9 +376,9 @@ elif month_num == 3:
     print('Mar')
 else:
     print('Other month')
-'''
+```
 
-'''python
+```python
 # Q26: Nested if: If score>80:
 #   if >90='Excellent', else='Good'
 # else if >60='Average', else 'Poor'.
@@ -392,9 +392,9 @@ elif score > 60:
     print('Average')
 else:
     print('Poor')
-'''
+```
 
-'''python
+```python
 # Q27: Multi-elif: Credit score rating:
 # >=800='Excellent', >=700='Good', >=600='Fair', else='Poor'.
 credit_score = 650
@@ -406,9 +406,9 @@ elif credit_score >= 600:
     print('Fair')
 else:
     print('Poor')
-'''
+```
 
-'''python
+```python
 # Q28: Nested if: If temperature>30:
 #   if >40='Heatwave', else='Hot'
 # else if >20='Warm', else 'Cool'.
@@ -422,9 +422,9 @@ elif temperature > 20:
     print('Warm')
 else:
     print('Cool')
-'''
+```
 
-'''python
+```python
 # Q29: Multi-elif: Salary range:
 # >=100000='Top Earner', >=50000='Middle', >=20000='Low Middle', else='Low'.
 salary = 30000
@@ -436,9 +436,9 @@ elif salary >= 20000:
     print('Low Middle')
 else:
     print('Low')
-'''
+```
 
-'''python
+```python
 # Q30: Nested if: If fuel>10:
 #   if >50='Full Tank', else='Partial'
 # else if >0='Low fuel', else 'Empty'.
@@ -452,9 +452,9 @@ elif fuel > 0:
     print('Low fuel')
 else:
     print('Empty')
-'''
+```
 
-'''python
+```python
 # Q31: Multi-elif: Internet speed:
 # >=100='High Speed', >=50='Medium Speed', >=10='Low Speed', else='Very Low'.
 internet_speed = 8
@@ -466,9 +466,9 @@ elif internet_speed >= 10:
     print('Low Speed')
 else:
     print('Very Low')
-'''
+```
 
-'''python
+```python
 # Q32: Nested if: If distance>1000:
 #   if >2000='Very Far', else='Far'
 # else if >500='Moderate', else 'Close'.
@@ -482,9 +482,9 @@ elif distance > 500:
     print('Moderate')
 else:
     print('Close')
-'''
+```
 
-'''python
+```python
 # Q33: Multi-elif: Customer rating:
 # 5='Excellent',4='Good',3='Average',2='Below Average',1='Poor', else='Invalid'.
 rating = 4
@@ -500,9 +500,9 @@ elif rating == 1:
     print('Poor')
 else:
     print('Invalid')
-'''
+```
 
-'''python
+```python
 # Q34: Nested if: If marks_obtained>80:
 #   if >90='Outstanding', else='Great'
 # else if >50='Okay', else 'Fail'.
@@ -516,9 +516,9 @@ elif marks_obtained > 50:
     print('Okay')
 else:
     print('Fail')
-'''
+```
 
-'''python
+```python
 # Q35: Multi-elif: Weather code:
 # 'S'='Sunny','R'='Rainy','C'='Cloudy','W'='Windy', else='Unknown'.
 weather_code = 'C'
@@ -532,9 +532,9 @@ elif weather_code == 'W':
     print('Windy')
 else:
     print('Unknown')
-'''
+```
 
-'''python
+```python
 # Q36: Nested if: If num>0:
 #   if even='Positive Even', else='Positive Odd'
 # else if num<0='Negative', else 'Zero'.
@@ -548,9 +548,9 @@ elif num < 0:
     print('Negative')
 else:
     print('Zero')
-'''
+```
 
-'''python
+```python
 # Q37: Multi-elif: Year category:
 # <1900='Historic', <2000='20th Century', <2020='Modern', else='Recent'.
 year = 1985
@@ -562,9 +562,9 @@ elif year < 2020:
     print('Modern')
 else:
     print('Recent')
-'''
+```
 
-'''python
+```python
 # Q38: Nested if: If stock_level>100:
 #   if >500='Surplus', else='Sufficient'
 # else if >0='Limited', else 'Out of stock'.
@@ -578,9 +578,9 @@ elif stock_level > 0:
     print('Limited')
 else:
     print('Out of stock')
-'''
+```
 
-'''python
+```python
 # Q39: Multi-elif: Priority level:
 # 1='High',2='Medium',3='Low', else='No priority'.
 priority = 1
@@ -592,9 +592,9 @@ elif priority == 3:
     print('Low')
 else:
     print('No priority')
-'''
+```
 
-'''python
+```python
 # Q40: Nested if: If attempts>3:
 #   if >5='Locked Out', else='One last try'
 # else if >0='Try again', else 'No attempt left'.
@@ -608,9 +608,9 @@ elif attempts > 0:
     print('Try again')
 else:
     print('No attempt left')
-'''
+```
 
-'''python
+```python
 # Q41: Multi-elif: Temperature scale:
 # 'C'='Celsius', 'F'='Fahrenheit', 'K'='Kelvin', else='Unknown'.
 scale = 'F'
@@ -622,9 +622,9 @@ elif scale == 'K':
     print('Kelvin')
 else:
     print('Unknown')
-'''
+```
 
-'''python
+```python
 # Q42: Nested if: If storage>100GB:
 #   if >500GB='Large Storage', else='Moderate'
 # else if >50GB='Small', else 'Minimal'.
@@ -638,9 +638,9 @@ elif storage > 50:
     print('Small')
 else:
     print('Minimal')
-'''
+```
 
-'''python
+```python
 # Q43: Multi-elif: Time of day by hour:
 # <6='Early Morning', <12='Morning', <18='Afternoon', <24='Night'.
 hour_of_day = 5
@@ -654,9 +654,9 @@ elif hour_of_day < 24:
     print('Night')
 else:
     print('Invalid hour')
-'''
+```
 
-'''python
+```python
 # Q44: Nested if: If cpu_usage>70%:
 #   if >90%='Overloaded', else='High Load'
 # else if >30%='Normal', else 'Low Load'.
@@ -670,9 +670,9 @@ elif cpu_usage > 30:
     print('Normal')
 else:
     print('Low Load')
-'''
+```
 
-'''python
+```python
 # Q45: Multi-elif: Check feedback char:
 # 'A'='Excellent', 'B'='Good', 'C'='Fair', 'D'='Poor', else='Unknown'.
 feedback = 'D'
@@ -686,9 +686,9 @@ elif feedback == 'D':
     print('Poor')
 else:
     print('Unknown')
-'''
+```
 
-'''python
+```python
 # Q46: Nested if: If hours_worked>40:
 #   if >60='Excessive OT', else='Overtime'
 # else if >20='Part-time', else 'Minimal'.
@@ -702,9 +702,9 @@ elif hours_worked > 20:
     print('Part-time')
 else:
     print('Minimal')
-'''
+```
 
-'''python
+```python
 # Q47: Multi-elif: Product rating:
 # >=4.5='Excellent', >=4='Good', >=3='Average', else='Poor'.
 product_rating = 3.5
@@ -716,9 +716,9 @@ elif product_rating >= 3:
     print('Average')
 else:
     print('Poor')
-'''
+```
 
-'''python
+```python
 # Q48: Nested if: If grade_level>10:
 #   if >12='College', else='High School'
 # else if >5='Primary', else 'Kindergarten'.
@@ -732,9 +732,9 @@ elif grade_level > 5:
     print('Primary')
 else:
     print('Kindergarten')
-'''
+```
 
-'''python
+```python
 # Q49: Multi-elif: Performance score:
 # >=90='Star', >=75='Good', >=50='Average', else='Needs Improvement'.
 performance_score = 95
@@ -746,9 +746,9 @@ elif performance_score >= 50:
     print('Average')
 else:
     print('Needs Improvement')
-'''
+```
 
-'''python
+```python
 # Q50: Nested if: If balance>10000:
 #   if >50000='Wealthy', else='Comfortable'
 # else if >0='Stable', else 'Debt'.
@@ -762,4 +762,4 @@ elif balance > 0:
     print('Stable')
 else:
     print('Debt')
-'''
+```
