@@ -712,4 +712,3 @@ Follow me on:
 - [Kaggle](https://www.kaggle.com/ashishjangra27)
 
 Stay updated with my latest content and projects!
-```
