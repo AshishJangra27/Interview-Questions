@@ -1,14 +1,6 @@
-# Practical If-Else and Nested If-Else Exercises (More Nested and Multi-Elif)
+# Practical If-Else and Nested If-Else Exercises
 
-Below are 50 practical Python practice questions focusing on **if-else**, **nested if-else**, and multiple `elif` conditions.
-
-Each question is provided as a code block with:
-- A comment describing the question
-- A code snippet showing one possible solution
-
-**Note:** No advanced data structures or functions are used, only basic variables, operators, and conditionals.
-
-You can copy and paste the code blocks into a Jupyter notebook or any Python environment to see the output.
+Below are 50 practical Python practice questions focusing on **if-else**, **nested if-else**,
 
 ---
 
