@@ -17,6 +17,7 @@
 #### [11. SQL for Data Analytics (100 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/SQL%20for%20Data%20Analytics.md)
 #### [12. Data Analysis with Python (100 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/Data%20Analysis%20with%20Python.md)
 #### [13. SQL in Action (25 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/SQL%20in%20Action.md)
+#### [14. Machine Learning (100 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/Machine%20Learning.md)
 
 ---
 
