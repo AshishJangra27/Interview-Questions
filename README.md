@@ -6,14 +6,15 @@
 
 #### [1. Excel for Data Analytics (100 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/Excel%20for%20Data%20Analytics.md)
 #### [2. Python Fundamentals (100 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/Python%20Fundamentals.md)
-#### [3. Dictionaries in Python (50 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/Dictionaries%20in%20Python.md)
-#### [4. Lists in Python (50 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/Lists%20in%20Python.md)
-#### [5. Strings in Python (50 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/Strings%20in%20Python.md)
-#### [6. NumPy (50 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/NumPy.md)
-#### [7. SQL Fundamentals (100 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/SQL%20Fundamentals.md)
-#### [8. SQL for Data Analytics (100 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/SQL%20for%20Data%20Analytics.md)
-#### [9. Data Analysis with Python (100 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/Data%20Analysis%20with%20Python.md)
-#### [10. SQL in Action (25 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/SQL%20in%20Action.md)
+#### [3. Conditions in Python (50 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/Conditions%20in%20Python.md)
+#### [4. Dictionaries in Python (50 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/Dictionaries%20in%20Python.md)
+#### [5. Lists in Python (50 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/Lists%20in%20Python.md)
+#### [6. Strings in Python (50 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/Strings%20in%20Python.md)
+#### [7. NumPy (50 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/NumPy.md)
+#### [8. SQL Fundamentals (100 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/SQL%20Fundamentals.md)
+#### [9. SQL for Data Analytics (100 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/SQL%20for%20Data%20Analytics.md)
+#### [10. Data Analysis with Python (100 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/Data%20Analysis%20with%20Python.md)
+#### [11. SQL in Action (25 Questions)](https://github.com/AshishJangra27/Interview-Questions/blob/main/SQL%20in%20Action.md)
 
 ---
 
