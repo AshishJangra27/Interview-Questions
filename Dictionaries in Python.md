@@ -649,11 +649,13 @@ d = {'a': 1, 'b': 2, 'c': 3}
 mapped_d = map_function_over_values(d, lambda x: x * 2)
 print(mapped_d)  # Output: {'a': 2, 'b': 4, 'c': 6}
 ```
+
 ---
 If you found this repository helpful, please give it a star!
+
 Follow me on:
 - [LinkedIn](https://www.linkedin.com/in/ashish-jangra/)
 - [GitHub](https://github.com/AshishJangra27)
 - [Kaggle](https://www.kaggle.com/ashishjangra27)
+
 Stay updated with my latest content and projects!
-```
