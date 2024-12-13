@@ -501,4 +501,11 @@ SHAP estimates the contribution of each feature to a particular prediction using
 
 ---
 
-These 100 questions and answers cover a broad range of widely used ML algorithms and related concepts—linear and logistic regression, tree-based models, SVM, KNN, Naive Bayes, PCA, clustering methods, ensembles, and model evaluation techniques—providing a strong foundation for candidates to understand and discuss standard machine learning practices without involving neural networks.
+If you found this repository helpful, please give it a star!
+
+Follow me on:
+- [LinkedIn](https://www.linkedin.com/in/ashish-jangra/)
+- [GitHub](https://github.com/AshishJangra27)
+- [Kaggle](https://www.kaggle.com/ashishjangra27)
+
+Stay updated with my latest content and projects!
