@@ -1,4 +1,3 @@
-```md
 # 100 Natural Language Processing (NLP) Interview Questions and Answers (Detailed)
 
 Below are 100 interview questions focused on NLP, spanning fundamental concepts, classical techniques, and modern deep learning-based approaches. The questions progress from basics like tokenization and POS tagging to advanced topics like transformers, large language models, and practical applications.
