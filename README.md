@@ -1,10 +1,11 @@
-# 🚀 Data Science Interview Prep Guide
+# Data Science Interview Prep Guide
 
-Level up your interview game with these topic-wise question sets, tailored for aspiring Data Scientists, Analysts & ML Engineers — simple, practical & to-the-point.
+Sharpen your skills with focused, no-fluff interview questions — built for Data Science, Analytics, and ML roles. Clear. Practical. Effective.
+
 
 ---
 
-## 📘 Topics Covered
+## Topics
 
 |   No.  |                Topic Name                 |   Questions   |           Link           |
 |:------:|:------------------------------------------|:-------------:|:------------------------:|
@@ -30,7 +31,7 @@ Level up your interview game with these topic-wise question sets, tailored for a
 
 ---
 
-## 💡 Why Use This?
+## Why Use This?
 
 - **Structured learning** — Topics broken into focused sets  
 - **Real-world relevance** — Practical questions and examples  
@@ -39,13 +40,13 @@ Level up your interview game with these topic-wise question sets, tailored for a
 
 ---
 
-## ⭐ Support the Project
+## Support the Project
 
 If this helped you, consider giving it a **⭐ on GitHub**. Your support keeps me creating!
 
 ---
 
-## 🔗 Let’s Connect
+## Let’s Connect
 
 - [LinkedIn](https://www.linkedin.com/in/ashish-jangra/)
 - [GitHub](https://github.com/AshishJangra27)
@@ -53,4 +54,4 @@ If this helped you, consider giving it a **⭐ on GitHub**. Your support keeps m
 
 ---
 
-Let’s ace those interviews — together. 💼🚀
+Thanks for reading :)
