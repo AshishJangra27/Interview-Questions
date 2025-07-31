@@ -7,8 +7,8 @@ Sharpen your skills with focused, no-fluff interview questions — built for Dat
 
 ## Topics
 
-|   No.  |                Topic Name                 |   Questions   |           Link           |
-|:------:|:------------------------------------------|:-------------:|:------------------------:|
+|   No.  |                Topic Name                 |       Questions        |           Link           |
+|:------:|:------------------------------------------|:-------------------:|:------------------------:|
 |   1    | Excel for Data Analytics                  |     100       | [Open](https://github.com/AshishJangra27/Interview-Questions/blob/main/Excel%20for%20Data%20Analytics.md) |
 |   2    | Python Fundamentals                       |     100       | [Open](https://github.com/AshishJangra27/Interview-Questions/blob/main/Python%20Fundamentals.md)         |
 |   3    | Conditions in Python                      |      50       | [Open](https://github.com/AshishJangra27/Interview-Questions/blob/main/Conditions%20in%20Python.md)      |
