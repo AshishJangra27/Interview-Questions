@@ -177,11 +177,14 @@ for _ in range(7):
 ---
 
 ### 19. Print pattern of stars:
+```
 *
 **
 ***
 ****
 *****
+```
+
 ```python
 for i in range(1, 5):
     print("*" * i)
@@ -190,11 +193,13 @@ for i in range(1, 5):
 ---
 
 ### 20. Print pattern of numbers:
+```
 1
 12
 123
 1234
 12345
+```
 ```python
 for i in range(1, 4):
     for j in range(1, i+1):
